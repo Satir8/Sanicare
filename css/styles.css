@@ -198,14 +198,6 @@ section {
     height: 100%;
 }
 
-/* .story__video-wrapper video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
-
 .text-wrapper {
     margin: 50px auto 60px;
 }
@@ -333,6 +325,10 @@ section {
 }
 
 @media screen and (min-width: 768px) {
+    .story {
+        padding-top: 30px;
+    }
+
     .text-wrapper {
         max-width: 700px;
         margin: 50px auto 80px;
@@ -361,10 +357,6 @@ section {
 }
 
 @media screen and (min-width: 1024px) {
-    .story {
-        padding-top: 30px;
-    }
-
     .story__video-wrapper {
         padding-bottom: unset;
         width: 955px;
@@ -377,6 +369,7 @@ section {
         max-width: 800px;
         margin: 50px auto 60px;
     }
+
     .story__description {
         margin-bottom: 40px;
     }
@@ -455,7 +448,6 @@ section {
 .cosmetics__image {
     max-width: 180px;
 }
-
 .cosmetics__item-title {
     color: #25356e;
     font-family: "Adam";
@@ -467,9 +459,6 @@ section {
     margin-bottom: 20px;
 }
 
-.item-list-elem {
-    position: relative;
-}
 .item-list-elem:not(:last-child) {
     margin-bottom: 15px;
 }
@@ -505,7 +494,6 @@ section {
         position: relative;
         background-color: rgba(144, 187, 225, 0.095);
     }
-
     .cosmetics::after {
         content: "";
         width: 98px;
@@ -519,12 +507,10 @@ section {
         transform: translateY(50%);
         z-index: 22;
     }
-
     .cosmetics__title {
         max-width: 580px;
         margin-bottom: 20px;
     }
-
     .cosmetics__list {
         max-width: 370px;
     }
@@ -534,7 +520,6 @@ section {
     .cosmetics__title {
         margin-bottom: 30px;
     }
-
     .cosmetics__list {
         max-width: 75%;
         flex-direction: row;
@@ -542,7 +527,6 @@ section {
         justify-content: space-evenly;
         align-items: flex-start;
     }
-
     .cosmetics__list-item {
         max-width: 35%;
     }
