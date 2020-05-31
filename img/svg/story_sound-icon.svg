@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="21px" height="16px" viewBox="0 0 21 16" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="Group-9" transform="translate(0.75 0.75)">
+    <path d="M0 3.60958L3.979 0.238582C4.628 -0.311418 5.625 0.150582 5.625 1.00158L5.625 12.9676C5.625 13.8186 4.628 14.2806 3.979 13.7306L0 10.3596" transform="translate(3.8751 0.01541784)" id="Stroke-1" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M3.375 6.75L1 6.75C0.447 6.75 0 6.302 0 5.75L0 1C0 0.448 0.447 0 1 0L3.375 0" transform="translate(0.5001 3.625)" id="Stroke-3" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M5 0L0 5" transform="translate(13.8283 4.4352)" id="Stroke-5" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M5 5L0 0" transform="translate(13.8283 4.4352)" id="Stroke-7" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>

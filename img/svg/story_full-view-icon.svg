@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <g id="Group-19" transform="translate(0.75 0.75)">
+    <path d="M5 6L1 6C0.447 6 0 5.552 0 5L0 1C0 0.447 0.447 0 1 0L5 0C5.552 0 6 0.447 6 1L6 5C6 5.552 5.552 6 5 6Z" transform="translate(6 6)" id="Stroke-1" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L4 0L4 4" transform="translate(14 0)" id="Stroke-3" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M3.601 0L0 3.6" transform="translate(14.39844 0)" id="Stroke-5" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M4 4L0 4L0 0" transform="translate(0 14)" id="Stroke-7" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 3.601L3.6 0" transform="translate(0 14.39899)" id="Stroke-9" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 4L0 0L4 0" id="Stroke-11" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M0 0L3.6 3.6" id="Stroke-13" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M4 0L4 4L0 4" transform="translate(14 14)" id="Stroke-15" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M3.601 3.601L0 0" transform="translate(14.39844 14.39899)" id="Stroke-17" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
