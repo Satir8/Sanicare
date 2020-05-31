@@ -190,21 +190,21 @@ section {
     padding-bottom: 56.25%;
     height: 0;
 }
-/* .story__video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} */
-
-.story__video-wrapper video {
+.story__video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
+
+/* .story__video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+} */
 
 .text-wrapper {
     margin: 50px auto 60px;
@@ -243,7 +243,7 @@ section {
     background-repeat: no-repeat;
     position: absolute;
     top: 2px;
-    left: -25px;
+    left: -20px;
 }
 
 .story__text {
@@ -252,8 +252,6 @@ section {
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 0.3px;
-}
-.story__list-item-wrap {
 }
 
 .story__list-item-wrap .story__inner-list {
@@ -962,8 +960,12 @@ section {
     line-height: 24px;
     letter-spacing: 0.3px;
 }
-.drop__text span {
+.drop__text-span {
     display: block;
+}
+
+.drop__text-bold {
+    font-weight: 700;
 }
 
 .drop__text:not(:last-child) {
@@ -1193,18 +1195,19 @@ section {
     .contact__img {
         width: 100px;
         position: absolute;
-        top: 45px;
-        left: -15px;
+        top: 42px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .contact__inner-wrapper {
         padding-top: 60px;
-        align-items: flex-start;
+        /* align-items: flex-start; */
         margin-bottom: 30px;
     }
 
     .contact__contact {
-        text-align: left;
+        /* text-align: left; */
     }
 
     .follow-contact-wrapper {
@@ -1215,7 +1218,7 @@ section {
     }
 
     .subscribe-contact-wrapper {
-        max-width: 832px;
+        max-width: 700px;
         display: flex;
         align-self: flex-start;
         justify-content: space-between;
@@ -1254,7 +1257,7 @@ section {
     }
 
     .follow__list {
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
     }
 
     .contact__banner-content {
