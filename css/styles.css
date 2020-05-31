@@ -206,35 +206,8 @@ section {
     height: 100%;
 }
 
-@media screen and (min-width: 1024px) {
-    .story {
-        padding-top: 30px;
-    }
-
-    .story__video-wrapper {
-        padding-bottom: unset;
-        width: 955px;
-        height: 556.5px;
-        margin: 0 auto;
-        border: 22px solid #ebf3f9;
-    }
-}
-@media screen and (min-width: 1440px) {
-    .story__video-wrapper {
-        width: 1062px;
-        height: 625px;
-        border: 32px solid #ebf3f9;
-    }
-}
-
 .text-wrapper {
-    margin: 50px 0px 60px;
-}
-
-@media screen and (min-width: 768px) {
-    .text-wrapper {
-        margin: 50px auto 60px;
-    }
+    margin: 50px auto 60px;
 }
 
 .story__text-wrapper .story__subheading {
@@ -245,6 +218,7 @@ section {
 
 .story__description {
     margin-bottom: 24px;
+    text-align: center;
 }
 
 .story__text-wrapper .story__list {
@@ -293,28 +267,14 @@ section {
 .story__inner-list-item::before {
     content: "";
     display: inline-block;
-    width: 4px;
-    height: 4.5px;
-    background-color: rgba(0, 0, 0, 0.9);
-    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    background-size: 12px 12px;
+    background-image: url(../img/svg/story_section-logo.svg);
+    background-repeat: no-repeat;
     position: absolute;
-    top: 10px;
-    left: -12px;
-}
-
-@media screen and (min-width: 768px) {
-    .story__text-wrapper .story__subheading {
-        max-width: 435px;
-    }
-
-    .story__description {
-        margin-bottom: 30px;
-    }
-
-    .story__text-wrapper .story__list {
-        max-width: 600px;
-        margin: 0 auto;
-    }
+    top: 5px;
+    left: -15px;
 }
 
 .tagline {
@@ -338,16 +298,6 @@ section {
     width: 20%;
     height: 1px;
     background: #7799b6;
-}
-
-@media screen and (min-width: 768px) {
-    .tagline {
-        justify-content: space-around;
-    }
-    .tagline::before,
-    .tagline::after {
-        width: 26%;
-    }
 }
 
 .tagline__img {
@@ -384,7 +334,71 @@ section {
     transform: translateY(50%);
 }
 
+@media screen and (min-width: 768px) {
+    .text-wrapper {
+        max-width: 700px;
+        margin: 50px auto 80px;
+    }
+
+    .story__text-wrapper .story__subheading {
+        max-width: 435px;
+    }
+
+    .story__description {
+        margin-bottom: 30px;
+    }
+
+    .story__text-wrapper .story__list {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .tagline {
+        justify-content: space-around;
+    }
+    .tagline::before,
+    .tagline::after {
+        width: 26%;
+    }
+}
+
 @media screen and (min-width: 1024px) {
+    .story {
+        padding-top: 30px;
+    }
+
+    .story__video-wrapper {
+        padding-bottom: unset;
+        width: 955px;
+        height: 556.5px;
+        margin: 0 auto;
+        border: 22px solid #ebf3f9;
+    }
+
+    .text-wrapper {
+        max-width: 800px;
+        margin: 50px auto 60px;
+    }
+    .story__description {
+        margin-bottom: 40px;
+    }
+
+    .story__text-wrapper .story__list {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .story__list-inner-wrapper {
+        max-width: 350px;
+        padding-left: 20px;
+    }
+
+    .story__list-item:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
     .product-banner-inner-wrapper {
         position: relative;
         width: 856px;
@@ -396,6 +410,23 @@ section {
         max-width: 118px;
         bottom: 45%;
         right: -8%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .story__video-wrapper {
+        width: 1062px;
+        height: 625px;
+        border: 32px solid #ebf3f9;
+    }
+
+    .text-wrapper {
+        max-width: 990px;
+    }
+
+    .story__list-inner-wrapper {
+        max-width: 450px;
+        padding-left: 30px;
     }
 }
 
@@ -910,12 +941,6 @@ section {
     padding: 30px 0px 0px;
 }
 
-@media screen and (min-width: 1024px) {
-    .drop {
-        padding: 90px 0px 0px;
-    }
-}
-
 .drop__title {
     max-width: 250px;
 }
@@ -923,6 +948,13 @@ section {
 .drop__text-wrapper {
     margin-bottom: 50px;
 }
+
+@media screen and (max-width: 374px) {
+    .drop__text-wrapper {
+        padding: 0px 20px;
+    }
+}
+
 .drop__text {
     opacity: 0.8;
     font-size: 14px;
@@ -930,9 +962,14 @@ section {
     line-height: 24px;
     letter-spacing: 0.3px;
 }
+.drop__text span {
+    display: block;
+}
+
 .drop__text:not(:last-child) {
     margin-bottom: 7px;
 }
+
 .drop__img {
     width: 100%;
 }
@@ -940,6 +977,12 @@ section {
 @media screen and (min-width: 768px) {
     .drop__text-wrapper {
         text-align: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .drop {
+        padding: 90px 0px 0px;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -973,10 +1016,9 @@ section {
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 0.5px;
-    margin-bottom: 10px;
 }
 
-.subscribe__input {
+.subscribe .subscribe__form .subscribe__input {
     width: 100%;
     border: none;
     background-color: transparent;
@@ -984,10 +1026,15 @@ section {
     border-bottom: 1px solid #25356e;
     font-family: "Open Sans";
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.5px;
     margin-bottom: 27px;
+}
+
+#subscribe-form .subscribe__input:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #25356e;
 }
 
 .subscribe__btn {
@@ -1134,7 +1181,7 @@ section {
     cursor: url("../img/pointer/pointer.svg"), auto;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .follow_title {
         display: none;
     }
@@ -1148,20 +1195,16 @@ section {
         position: absolute;
         top: 45px;
         left: -15px;
-        /* display: none; */
     }
 
     .contact__inner-wrapper {
         padding-top: 60px;
         align-items: flex-start;
+        margin-bottom: 30px;
     }
 
     .contact__contact {
         text-align: left;
-    }
-
-    .contact__contact:not(:last-child) {
-        margin-bottom: 30px;
     }
 
     .follow-contact-wrapper {
@@ -1181,7 +1224,7 @@ section {
     }
 
     .subscribe {
-        width: 486px;
+        margin: 0 auto;
     }
     .subscribe__title {
         margin-bottom: 20x;
@@ -1223,9 +1266,16 @@ section {
         margin-bottom: 14px;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .subscribe {
+        width: 486px;
+    }
+}
 @media screen and (min-width: 1440px) {
     .subscribe-contact-wrapper {
-        max-width: 832px;
+        max-width: 940px;
+        padding-right: 80px;
     }
 
     .contact__title {
