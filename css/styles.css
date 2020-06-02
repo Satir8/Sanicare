@@ -1,38 +1,3 @@
-@font-face {
-    font-family: "Adam";
-    font-style: normal;
-    font-weight: 300;
-    src: local("Adam Light"), local("Adam-Light"),
-        url("../fonts/Adam-Light.ttf");
-}
-@font-face {
-    font-family: "Adam";
-    font-style: normal;
-    font-weight: 500;
-    src: local("Adam Medium"), local("Adam-Medium"),
-        url("../fonts/Adam-Medium.ttf");
-}
-@font-face {
-    font-family: "Adam";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Adam Bold"), local("Adam-Bold"), url("../fonts/Adam-Bold.ttf");
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 300;
-    src: local("OpenSans Light"), local("OpenSans-Light"),
-        url("../fonts/OpenSans-Light.ttf");
-}
-@font-face {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("OpenSans Regular"), local("OpenSans-Regular"),
-        url("../fonts/OpenSans-Regular.ttf");
-}
-
 html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -72,9 +37,10 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     margin: 0;
-    font-family: Adam, sans-serif;
+    font-family: Adam, "Open Sans", sans-serif;
 }
 
 p {
@@ -219,9 +185,6 @@ section {
 
 .story__list-item {
     position: relative;
-}
-
-.story__list-item:not(:last-child) {
     margin-bottom: 10px;
 }
 
@@ -247,7 +210,7 @@ section {
 }
 
 .story__list-item-wrap .story__inner-list {
-    padding-left: 15px;
+    padding: 3px 0px 0px 15px;
 }
 
 .story__inner-list-item {
@@ -358,7 +321,7 @@ section {
 
 @media screen and (min-width: 1024px) {
     .story__video-wrapper {
-        padding-bottom: unset;
+        padding-bottom: 0;
         width: 955px;
         height: 556.5px;
         margin: 0 auto;
@@ -386,7 +349,7 @@ section {
         padding-left: 20px;
     }
 
-    .story__list-item:not(:last-child) {
+    .story__list-item {
         margin-bottom: 16px;
     }
 
@@ -447,10 +410,11 @@ section {
 }
 .cosmetics__image {
     max-width: 180px;
+    margin-bottom: 20px;
 }
 .cosmetics__item-title {
     color: #25356e;
-    font-family: "Adam";
+    font-family: "Adam", "Open Sans", sans-serif;
     font-size: 20px;
     font-weight: 700;
     line-height: 27px;
@@ -476,7 +440,7 @@ section {
 }
 
 .cosmetics__list-description {
-    font-family: "Adam";
+    font-family: "Adam", "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 20px;
@@ -528,13 +492,18 @@ section {
         align-items: flex-start;
     }
     .cosmetics__list-item {
-        max-width: 35%;
+        width: 35%;
+        margin: 0 auto;
     }
     .cosmetics__list-item:not(:last-child) {
-        margin-bottom: unset;
+        margin-bottom: 0;
     }
     .cosmetics__list-item:not(:nth-last-child(-n + 2)) {
         margin-bottom: 80px;
+    }
+
+    .cosmetics__item-list {
+        width: 100%;
     }
 }
 
@@ -581,7 +550,7 @@ section {
 }
 
 .wow__list-item-text {
-    font-family: "Adam";
+    font-family: "Adam", "Open Sans", sans-serif;
     font-size: 18px;
     font-weight: 500;
     line-height: 20px;
@@ -601,7 +570,7 @@ section {
     }
 
     .wow__list-item:not(:nth-last-child(-n + 2)) {
-        margin-bottom: unset;
+        margin-bottom: 0;
     }
 
     .wow__list-item {
@@ -623,39 +592,35 @@ section {
     .wow__list-item {
         margin: 0px 30px;
     }
+    .wow__list-item:not(:nth-last-child(-n + 3)) {
+        margin-bottom: 0;
+    }
+    .wow__list-item:not(:nth-last-child(-n + 4)) {
+        margin-bottom: 40px;
+    }
 }
 
 /* MIX AND MATCH SECTION */
 
+.order__btn-wrapper-md {
+    display: none;
+}
+
 .order {
     padding: 0px 0px 65px 0px;
 }
-.order__slider {
-    position: relative;
-    margin-bottom: 32px;
-}
+
+/* Slider start */
 
 .slider__img {
     width: 100%;
     object-fit: cover;
 }
+
 .order__picture-wrapper {
     position: relative;
     height: 210px;
-}
-
-.order__picture-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 52px;
-    z-index: 8;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.05),
-        rgba(44, 0, 0, 0.493)
-    );
+    margin-bottom: 32px;
 }
 
 #carousel {
@@ -673,6 +638,20 @@ section {
     }
 }
 
+.order__picture-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    z-index: 8;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.05),
+        rgba(44, 0, 0, 0.493)
+    );
+}
+
 .carousel .indicators {
     max-height: 12px;
     display: flex;
@@ -680,7 +659,7 @@ section {
     position: absolute;
     bottom: 0;
     left: 50%;
-    right: unset;
+    right: auto;
     z-index: 10;
     transform: translateX(-50%);
     margin-bottom: 10px;
@@ -714,6 +693,7 @@ section {
         margin-bottom: 14px;
     }
 }
+/* Slider end */
 
 .order__button {
     display: block;
@@ -721,7 +701,7 @@ section {
     margin: 0 auto;
     padding: 20px 23px 18px 76px;
     color: #ffffff;
-    font-family: "Adam";
+    font-family: "Adam", "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -757,14 +737,18 @@ section {
     margin-bottom: 30px;
     padding: 0px 10px;
 }
-
 .order__description span {
     display: block;
     margin-top: 10px;
 }
 
-.order__btn-wrapper-md {
-    display: none;
+.order-text {
+    font-weight: 400;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.order-text span {
+    font-weight: 700;
 }
 
 .order__btn-wrapper-sm .story__list {
@@ -780,15 +764,6 @@ section {
     }
 }
 
-.order-text {
-    font-weight: 400;
-    margin-bottom: 24px;
-    text-align: center;
-}
-.order-text span {
-    font-weight: 700;
-}
-
 @media screen and (min-width: 1024px) {
     .order__btn-wrapper-sm {
         display: none;
@@ -799,23 +774,22 @@ section {
     }
 
     .match {
-        padding: 0px;
+        padding: 0px 0px 90px;
     }
     .match_inner-wrapper {
         background-color: rgba(144, 187, 225, 0.095);
     }
 
     .match__content-wrapper {
+        width: 1024px;
         padding: 60px 0px 100px;
-        margin: 0 auto;
-        margin-bottom: 80px;
+        margin: 0px auto 80px;
     }
 
     .match__content-inner-wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        margin: 0 auto;
+        align-items: center;
     }
 
     .match__title {
@@ -827,18 +801,14 @@ section {
         padding: 0px;
     }
 
-    .order__slider {
-        margin-bottom: 0px;
-    }
-
     .order__picture-wrapper {
-        position: relative;
         width: 440px;
         height: 420px;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        margin-bottom: 0px;
     }
 
     .order__btn-wrapper-md {
@@ -853,13 +823,12 @@ section {
     }
 
     .order__description {
-        padding: unset;
+        padding: 0;
         margin-bottom: 20px;
     }
 
     .order-text {
         line-height: 1.2;
-        margin-bottom: unset;
         margin-bottom: 20px;
     }
 }
@@ -871,10 +840,6 @@ section {
 
     .match__content-wrapper {
         max-width: 1250px;
-    }
-
-    .match__content-inner-wrapper {
-        align-items: center;
     }
 
     .order__picture-wrapper {
@@ -896,7 +861,7 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: unset;
+        margin: 0;
         max-width: 640px;
     }
 
@@ -958,18 +923,10 @@ section {
     width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-    .drop__text-wrapper {
-        /* text-align: center; */
-    }
-}
-
 @media screen and (min-width: 1024px) {
     .drop {
         padding: 90px 0px 0px;
     }
-}
-@media screen and (min-width: 1024px) {
     .drop__text {
         font-size: 16px;
     }
@@ -989,8 +946,7 @@ section {
     font-weight: 300;
     line-height: 30px;
     letter-spacing: 0.5px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0px auto 20px;
 }
 
 .subscribe__label {
@@ -998,7 +954,7 @@ section {
     color: #25356e;
     font-family: "Open Sans";
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 0.5px;
 }
 
@@ -1013,19 +969,38 @@ section {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.5px;
-    margin-bottom: 27px;
+    margin-bottom: 20px;
 }
 
-#subscribe-form .subscribe__input:focus {
+#mc-embedded-subscribe-form .subscribe__input:focus {
     box-shadow: none;
     border-bottom: 1px solid #25356e;
 }
 
+.subscribe__fieldset {
+    display: flex;
+    border: none;
+    padding-left: 0;
+}
+
+.subscribe__fieldset span {
+    font-family: "Open Sans", sans-serif;
+}
+
+.subscribe__text {
+    padding: 10px 0px;
+}
+
+.subscribe__link {
+    display: block;
+}
+
 .subscribe__btn {
+    cursor: url("../img/pointer/pointer.svg"), auto;
     display: block;
     margin: 0 auto;
     color: #ffffff;
-    font-family: "Adam";
+    font-family: "Adam", "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
@@ -1033,9 +1008,11 @@ section {
     text-transform: uppercase;
     letter-spacing: 0.6px;
     width: 100%;
+    border: none;
     border-radius: 6px;
     background: #25356e;
-    padding: 20px 0px;
+    padding: 10px 0px;
+    margin-top: 10px;
 }
 
 /* FOLLOW AND CONTACT SECTION */
@@ -1146,7 +1123,7 @@ section {
 
 .contact__title {
     color: #ffffff;
-    font-family: "Adam";
+    font-family: "Adam", "Open Sans", sans-serif;
     font-size: 28px;
     font-weight: 500;
     line-height: 50px;
@@ -1156,13 +1133,16 @@ section {
     margin-bottom: 14px;
 }
 
+@media screen and (max-width: 374px) {
+    .contact__title {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+}
+
 .contact__icon {
     max-width: 123px;
     max-height: 127px;
-}
-
-.distributor__link {
-    cursor: url("../img/pointer/pointer.svg"), auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -1184,12 +1164,7 @@ section {
 
     .contact__inner-wrapper {
         padding-top: 60px;
-        /* align-items: flex-start; */
         margin-bottom: 30px;
-    }
-
-    .contact__contact {
-        /* text-align: left; */
     }
 
     .follow-contact-wrapper {
@@ -1204,22 +1179,26 @@ section {
         display: flex;
         align-self: flex-start;
         justify-content: space-between;
-        margin: 0 auto;
-        margin-bottom: 100px;
+        margin: 0 auto 100px;
     }
 
     .subscribe {
+        width: 60%;
         margin: 0 auto;
     }
+
+    .subscribe .subscribe__form .subscribe__input {
+        width: 355px;
+    }
+
     .subscribe__title {
-        margin-bottom: 20x;
+        margin-bottom: 20px;
     }
 
     .subscribe__description {
-        margin: unset;
         padding: 0;
         max-width: 380px;
-        margin-bottom: 48px;
+        margin: 0px 0px 48px;
     }
 
     .subscribe__title,
@@ -1235,15 +1214,7 @@ section {
     }
 
     .subscribe__form {
-        margin: unset;
-    }
-
-    .follow__list {
-        /* justify-content: flex-start; */
-    }
-
-    .contact__banner-content {
-        top: 33.3%;
+        margin: 0;
     }
 
     .contact__title {
@@ -1252,15 +1223,23 @@ section {
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .subscribe {
-        width: 486px;
+@media screen and (min-width: 1024px) {
+    .contact__banner-content {
+        top: 33.3%;
+    }
+    .subscribe-contact-wrapper {
+        max-width: 980px;
+        padding-right: 80px;
     }
 }
+
 @media screen and (min-width: 1440px) {
     .subscribe-contact-wrapper {
-        max-width: 940px;
-        padding-right: 80px;
+        padding-right: 100px;
+    }
+
+    .subscribe {
+        width: 486px;
     }
 
     .contact__title {
@@ -1273,13 +1252,13 @@ section {
 
 .ftr__inner-wrapper {
     color: #273571;
-    font-family: Adam;
+    font-family: Adam, "Open Sans", sans-serif;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.6px;
     line-height: 28px;
     text-align: center;
-    padding: 15px 0px 28px;
+    padding: 15px 0px 18px;
     border-top: 1px solid rgba(119, 153, 182, 0.24);
 }
 

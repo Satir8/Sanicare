@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Adam";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Adam Light"), local("Adam-Light"),
+        url("../fonts/Adam-Light.ttf");
+}
+@font-face {
+    font-family: "Adam";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Adam Medium"), local("Adam-Medium"),
+        url("../fonts/Adam-Medium.ttf");
+}
+@font-face {
+    font-family: "Adam";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Adam Bold"), local("Adam-Bold"), url("../fonts/Adam-Bold.ttf");
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("OpenSans Light"), local("OpenSans-Light"),
+        url("../fonts/OpenSans-Light.ttf");
+}
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("OpenSans Regular"), local("OpenSans-Regular"),
+        url("../fonts/OpenSans-Regular.ttf");
+}
