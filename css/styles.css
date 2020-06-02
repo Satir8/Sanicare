@@ -22,7 +22,7 @@ body {
 button {
     background-color: transparent;
     border: none;
-    cursor: url("../img/pointer/pointer.svg"), auto;
+    cursor: url("../img/pointer/pointer.cur"), auto;
 }
 
 ul,
@@ -32,7 +32,7 @@ ol {
 
 a {
     text-decoration: none;
-    cursor: url("../img/pointer/pointer.svg"), auto;
+    cursor: url("../img/pointer/pointer.cur"), auto;
 }
 
 h1,
@@ -627,9 +627,22 @@ section {
     height: 76px;
     border-radius: 50%;
     background-color: #ffffff;
+    background-position: center;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
 }
-.wow__list-item:not(:nth-child(5)) .wow__item-inner-wrapper {
-    padding: 8px;
+
+.wow__list-item:nth-child(2) .wow__item-inner-wrapper {
+    background-size: 35px 50px;
+}
+.wow__list-item:nth-child(5) .wow__item-inner-wrapper {
+    background-size: 70px 35px;
+}
+.wow__list-item:nth-child(6) .wow__item-inner-wrapper {
+    background-size: 40px 60px;
+}
+.wow__list-item:nth-child(7) .wow__item-inner-wrapper {
+    background-size: 70px 50px;
 }
 
 .wow__list-item-text {
@@ -666,7 +679,7 @@ section {
     }
 
     .wow__list-item:hover {
-        cursor: url("../img/pointer/pointer.svg"), auto;
+        cursor: url("../img/pointer/pointer.cur"), auto;
     }
     .wow__list-item:hover .wow__icon-wrapper {
         border: solid 1px rgba(37, 53, 110, 0.64);
@@ -698,9 +711,9 @@ section {
 /* Slider start */
 
 .slider__img {
-    width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .order__picture-wrapper {
@@ -770,7 +783,7 @@ section {
 }
 
 .carousel .indicators .indicator-item {
-    cursor: url("../img/pointer/pointer.svg"), auto;
+    cursor: url("../img/pointer/pointer.cur"), auto;
     padding: 0px 4px;
     display: inline-block;
     width: 12px;
@@ -803,7 +816,7 @@ section {
     display: block;
     max-width: 327px;
     margin: 0 auto;
-    padding: 20px 23px 18px 76px;
+    padding: 20px 23px 20px 76px;
     color: #ffffff;
     font-family: "Adam", "Open Sans", sans-serif;
     font-size: 16px;
@@ -818,7 +831,7 @@ section {
     background-repeat: no-repeat;
     background-position: 24px center;
     background-size: 42px 40px;
-    cursor: url("../img/pointer/pointer.svg"), auto;
+    cursor: url("../img/pointer/pointer.cur"), auto;
 }
 
 @media screen and (max-width: 374px) {
@@ -986,6 +999,7 @@ section {
         align-items: center;
         margin: 0;
         max-width: 640px;
+        margin-right: 20px;
     }
 
     .order__btn-wrapper-md .story__list {
@@ -1102,14 +1116,12 @@ section {
 }
 
 .subscribe__fieldset {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     border: none;
     padding-left: 0;
 }
 
-.subscribe__fieldset span {
+.subfield {
+    display: block;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -1122,7 +1134,7 @@ section {
 }
 
 .subscribe__btn {
-    cursor: url("../img/pointer/pointer.svg"), auto;
+    cursor: url("../img/pointer/pointer.cur"), auto;
     display: block;
     margin: 0 auto;
     color: #ffffff;
@@ -1174,7 +1186,7 @@ section {
 
 .follow__list-item:hover {
     background-color: #25356e;
-    cursor: url("../img/pointer/pointer.svg"), auto;
+    cursor: url("../img/pointer/pointer.cur"), auto;
 }
 .follow__list-item:hover .follow__icon {
     fill: #ffffff;
