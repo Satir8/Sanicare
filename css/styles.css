@@ -22,7 +22,7 @@ body {
 button {
     background-color: transparent;
     border: none;
-    cursor: url("../img/pointer/pointer.cur"), auto;
+    cursor: pointer;
 }
 
 ul,
@@ -32,7 +32,7 @@ ol {
 
 a {
     text-decoration: none;
-    cursor: url("../img/pointer/pointer.cur"), auto;
+    cursor: pointer;
 }
 
 h1,
@@ -678,9 +678,6 @@ section {
         margin-bottom: 40px;
     }
 
-    .wow__list-item:hover {
-        cursor: url("../img/pointer/pointer.cur"), auto;
-    }
     .wow__list-item:hover .wow__icon-wrapper {
         border: solid 1px rgba(37, 53, 110, 0.64);
     }
@@ -783,7 +780,7 @@ section {
 }
 
 .carousel .indicators .indicator-item {
-    cursor: url("../img/pointer/pointer.cur"), auto;
+    cursor: pointer;
     padding: 0px 4px;
     display: inline-block;
     width: 12px;
@@ -831,7 +828,7 @@ section {
     background-repeat: no-repeat;
     background-position: 24px center;
     background-size: 42px 40px;
-    cursor: url("../img/pointer/pointer.cur"), auto;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 374px) {
@@ -1258,6 +1255,28 @@ input:-webkit-autofill:active {
     box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.595) inset !important;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    -webkit-text-fill-color: #7799b6;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 18px !important;
+    letter-spacing: 0.5px !important;
+    text-indent: 8px !important;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1.5px solid rgba(38, 166, 154, 0.4);
+    border: 1.5px solid rgba(38, 166, 154, 0.4);
+    box-shadow: none;
+}
+
 .subscribe .subscribe__form .subscribe__input,
 .select-wrapper input.select-dropdown {
     width: 100%;
@@ -1272,10 +1291,20 @@ input:-webkit-autofill:active {
     line-height: 24px;
     letter-spacing: 0.5px;
     margin: 0 0 20px 0;
+    color: rgba(119, 153, 182, 1);
 }
 
 .subscribe .subscribe__form .subscribe__input::placeholder {
-    color: rgba(119, 153, 182, 0.64);
+    color: rgba(119, 153, 182, 1);
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-indent: 8px;
+}
+
+.dropdown-content li > a,
+.dropdown-content li > span {
+    color: rgba(119, 153, 182, 0.84);
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     letter-spacing: 0.5px;
@@ -1283,16 +1312,34 @@ input:-webkit-autofill:active {
 }
 
 .select-wrapper input.select-dropdown {
-    color: rgba(119, 153, 182, 0.64);
+    color: rgba(119, 153, 182, 1);
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     letter-spacing: 0.5px;
     text-indent: 8px;
 }
 
+.select__wrapper {
+    /* position: relative; */
+}
+/* .select__wrapper .select__label {
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    color: rgba(119, 153, 182, 0.64);
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+.select-wrapper input.select-dropdown:focus > .select__label {
+    display: none;
+} */
+
 .subscribe .subscribe__form .subscribe__input:required:focus,
 .select-wrapper input.select-dropdown:focus {
     box-shadow: none;
+    border-bottom: none;
     border: 1.5px solid rgba(38, 166, 154, 0.4);
 }
 
@@ -1313,7 +1360,7 @@ input:-webkit-autofill:active {
 }
 
 .subscribe__btn {
-    cursor: url("../img/pointer/pointer.cur"), auto;
+    cursor: pointer;
     display: block;
     margin: 0 auto;
     color: #ffffff;
@@ -1328,7 +1375,7 @@ input:-webkit-autofill:active {
     border: none;
     border-radius: 6px;
     background: #25356e;
-    padding: 12px 0px;
+    padding: 12px 0px 10px;
     margin-top: 10px;
 }
 
@@ -1365,7 +1412,7 @@ input:-webkit-autofill:active {
 
 .follow__list-item:hover {
     background-color: #25356e;
-    cursor: url("../img/pointer/pointer.cur"), auto;
+    cursor: pointer;
 }
 .follow__list-item:hover .follow__icon {
     fill: #ffffff;
@@ -1609,7 +1656,7 @@ input:-webkit-autofill:active {
 
     .select-wrapper input.select-dropdown {
         margin-bottom: 0;
-        cursor: url("../img/pointer/pointer.cur"), auto;
+        cursor: pointer;
     }
 
     .select-wrapper {
