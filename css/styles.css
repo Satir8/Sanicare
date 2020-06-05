@@ -893,6 +893,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10px;
 }
 
 .bespoke__content-wrapper {
@@ -912,7 +913,7 @@ section {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 .bespoke__title {
     width: 300px;
@@ -921,7 +922,7 @@ section {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0;
-    margin-bottom: 14px;
+    margin-bottom: 0px;
 }
 
 .bespoke__img-wrapper {
@@ -931,12 +932,12 @@ section {
 }
 
 .bespoke__logo {
-    width: 24px;
+    width: 18px;
     height: auto;
 }
 
 .bespoke__handshake {
-    width: 80px;
+    width: 75px;
     height: auto;
 }
 
@@ -950,13 +951,21 @@ section {
         margin-bottom: 50px;
     }
 
+    .bespoke__overlay {
+        padding-top: 0;
+    }
+
     .bespoke__content-wrapper {
         width: 862px;
+        height: 76%;
+        justify-content: space-between;
+        margin-bottom: 20px;
     }
     .bespoke__description {
         width: 80%;
         font-size: 26px;
         line-height: 1.2;
+        margin-bottom: 20px;
     }
     .bespoke__title {
         width: 100%;
@@ -1059,7 +1068,9 @@ section {
     }
 
     .bespoke__content-wrapper {
-        width: 862px;
+        height: 100%;
+        justify-content: space-evenly;
+        margin-bottom: 0;
     }
     .bespoke__description {
         width: 70%;
@@ -1140,7 +1151,8 @@ section {
     }
 
     .bespoke__content-wrapper {
-        width: 862px;
+        justify-content: space-between;
+        padding: 28px 0px;
     }
     .bespoke__description {
         width: 75%;
@@ -1223,7 +1235,7 @@ section {
 
 @media screen and (max-width: 424px) {
     .subscribe__title {
-        font-size: 28px;
+        font-size: 26px;
     }
 }
 
@@ -1318,23 +1330,6 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
     letter-spacing: 0.5px;
     text-indent: 8px;
 }
-
-.select__wrapper {
-    /* position: relative; */
-}
-/* .select__wrapper .select__label {
-    position: absolute;
-    top: 9px;
-    left: 8px;
-    color: rgba(119, 153, 182, 0.64);
-    font-family: "Open Sans", sans-serif;
-    font-size: 18px;
-    letter-spacing: 0.5px;
-}
-
-.select-wrapper input.select-dropdown:focus > .select__label {
-    display: none;
-} */
 
 .subscribe .subscribe__form .subscribe__input:required:focus,
 .select-wrapper input.select-dropdown:focus {
