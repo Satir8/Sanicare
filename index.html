@@ -1,827 +1,892 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- favicon start -->
-    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
-    <link rel="manifest" href="site.webmanifest" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- favicon end -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- favicon start -->
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="favicon-16x16.png"
+        />
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="manifest" href="site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- favicon end -->
 
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="css/materialize.min.css"
-      media="screen,projection"
-    />
+        <link
+            type="text/css"
+            rel="stylesheet"
+            href="css/materialize.min.css"
+            media="screen,projection"
+        />
 
-    <link type="text/css" rel="stylesheet" href="./css/fonts.css" />
-    <link type="text/css" rel="stylesheet" href="./css/styles.css" />
-    <title>BEYOND RESILIENCE - Sanitising Hand Cosmetics</title>
+        <link type="text/css" rel="stylesheet" href="./css/fonts.css" />
+        <link type="text/css" rel="stylesheet" href="./css/styles.css" />
+        <title>BEYOND RESILIENCE - Sanitising Hand Cosmetics</title>
 
-    <!-- Facebook Pixel Code -->
-    <script>
-      !(function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "198198521246858");
-      fbq("track", "PageView");
-    </script>
-    <noscript
-      ><img
-        height="1"
-        width="1"
-        style="display: none;"
-        src="https://www.facebook.com/tr?id=198198521246858&ev=PageView&noscript=1"
-    /></noscript>
-    <!-- End Facebook Pixel Code -->
+        <!-- Facebook Pixel Code -->
+        <script>
+            !(function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod
+                        ? n.callMethod.apply(n, arguments)
+                        : n.queue.push(arguments);
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = "2.0";
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s);
+            })(
+                window,
+                document,
+                "script",
+                "https://connect.facebook.net/en_US/fbevents.js"
+            );
+            fbq("init", "198198521246858");
+            fbq("track", "PageView");
+        </script>
+        <noscript
+            ><img
+                height="1"
+                width="1"
+                style="display: none;"
+                src="https://www.facebook.com/tr?id=198198521246858&ev=PageView&noscript=1"
+        /></noscript>
+        <!-- End Facebook Pixel Code -->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-168136948-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-168136948-1"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-      gtag("config", "UA-168136948-1");
-    </script>
+            gtag("config", "UA-168136948-1");
+        </script>
 
-    <script src="./js/picturefill.js"></script>
-  </head>
+        <script src="./js/picturefill.js"></script>
+    </head>
 
-  <body>
-    <script src="./js/svgxuse.js" defer></script>
-    <header class="hdr">
-      <div class="hdr__logo-wrapper">
-        <h1 class="page-title visually-hidden">
-          Sany - Sanytise Anything
-        </h1>
-        <img src="./img/logo.png" alt="Sanycare" class="hdr__logo" />
-      </div>
-    </header>
-    <main>
-      <section class="story">
-        <div class="section-title-wrapper story-title-wrapper">
-          <div class="section-logo-wrapper">
-            <img
-              class="section-logo"
-              src="./img/svg/story_section-logo.svg"
-              alt="Sanycare"
-            />
-          </div>
-
-          <h2 class="section-title">The story</h2>
-        </div>
-        <div class="story__video-wrapper">
-          <iframe
-            src="https://www.youtube.com/embed/eYa6KcqlaFA?vq=hd1080&autoplay=1&rel=0&cc_load_policy=1&iv_load_policy=3"
-            width="560"
-            height="315"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <div class="custom-container">
-          <div class="story__text-wrapper text-wrapper">
-            <h4 class="cosmetics__item-title story__subheading">
-              A MUST-HAVE ACCESSORY THAT COMBINES CARE, DISINFECTION & DESIGN
-            </h4>
-            <p class="story__text story__description">
-              BEYOND RESILIENCE is the all-in-one WOW-effect that everyone was
-              looking for: highly innovative, scientifically tested
-              bio-cosmetics for your hands that do not only kill 99,999% of
-              bacteria and enveloped viruses like COVID-19, but also nourish
-              your skin with exclusive natural ingredients such as Pomegranate,
-              Avocado and Aloe Vera. The refreshing scent of Lemongrass awakens
-              body and mind in any life situation and the bespoke premium
-              packaging fulfills the most discerning demands.
-            </p>
-            <div class="story__list">
-              <div class="story__list-inner-wrapper">
-                <div class="story__list-item">
-                  <p class="story__text">
-                    Made in Austria
-                  </p>
-                </div>
-                <div class="story__list-item">
-                  <p class="story__text">
-                    Radical, progressive, unique
-                  </p>
-                </div>
-                <div class="story__list-item">
-                  <p class="story__text">
-                    Natural ingredients instead of crude oil and aggressive
-                    chemicals
-                  </p>
-                </div>
-                <div class="story__list-item">
-                  <p class="story__text">
-                    Shake well before usage: We are proud that BEYOND RESILIENCE
-                    does not contain any silicones, parabens or emulsifiers.
-                  </p>
-                </div>
-                <div class="story__list-item">
-                  <p class="story__text">
-                    Sustainable, premium glass packaging and refill options
-                  </p>
-                </div>
-              </div>
-              <div class="story__list-inner-wrapper">
-                <div class="story__list-item">
-                  <div class="story__list-item-wrap">
-                    <p class="story__text">
-                      Outstanding laboratory results
-                    </p>
-                    <ul class="story__inner-list">
-                      <li class="story__inner-list-item">
-                        <p class="story__text">
-                          Effective in only 30 sec. against 99,999% of bacteria
-                          and enveloped viruses
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="story__list-item">
-                  <div class="story__list-item-wrap">
-                    <p class="story__text">
-                      Holistic approach “Be the Drop to Impact”:
-                    </p>
-                    <ul class="story__inner-list">
-                      <li class="story__inner-list-item">
-                        <p class="story__text">
-                          Global lifestyle community
-                        </p>
-                      </li>
-                      <li class="story__inner-list-item">
-                        <p class="story__text">
-                          Awareness for your own mental and physical health
-                        </p>
-                      </li>
-                      <li class="story__inner-list-item">
-                        <p class="story__text">
-                          Donations to social projects
-                        </p>
-                      </li>
-                      <li class="story__inner-list-item">
-                        <p class="story__text">
-                          Awareness for sustainability and environment
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="story__list-item">
-                  <p class="story__text">
-                    Mix & Match packaging philosophy to match your very own
-                    taste and mood every day
-                  </p>
-                </div>
-              </div>
+    <body>
+        <script src="./js/svgxuse.js" defer></script>
+        <header class="hdr">
+            <div class="hdr__logo-wrapper">
+                <h1 class="page-title visually-hidden">
+                    BEYOND RESILIENCE - Sanytise Anything
+                </h1>
+                <img src="./img/logo.png" alt="BEYOND RESILIENCE" class="hdr__logo" />
             </div>
-          </div>
-        </div>
-        <div class="story__tagline tagline">
-          <img
-            src="./img/story_tagline-img.png"
-            alt="hand in hand"
-            class="tagline__img"
-          />
-          <img
-            src="./img/svg/tagline_logo.svg"
-            alt="sanycare logo"
-            class="tagline__icon"
-          />
-        </div>
-        <div class="product-banner-wrapper">
-          <div class="product-banner-inner-wrapper">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="./img/story__products-pic@3x.jpeg"
-              />
+        </header>
+        <main>
+            <section class="story">
+                <div class="section-title-wrapper story-title-wrapper">
+                    <div class="section-logo-wrapper">
+                        <img
+                            class="section-logo"
+                            src="./img/svg/story_section-logo.svg"
+                            alt="BEYOND RESILIENCE"
+                        />
+                    </div>
 
-              <img
-                src="./img/story/story_products.jpeg"
-                alt="sanycare products"
-                class="banner-wrapper__img"
-              />
-            </picture>
-            <img
-              src="./img/story_products-leaf.png"
-              alt="#"
-              class="banner-wrapper__leaf-img"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="cosmetics">
-        <div class="section-title-wrapper cosmetics__title-wrapper">
-          <div class="section-logo-wrapper">
-            <img
-              class="section-logo"
-              src="./img/svg/story_section-logo.svg"
-              alt="Sanycare"
-            />
-          </div>
-
-          <h2 class="section-title cosmetics__title">
-            EXCLUSIVE, SANITISING BIO-COSMETICS FOR YOUR HANDS
-          </h2>
-        </div>
-        <ul class="cosmetics__list">
-          <li class="cosmetics__list-item">
-            <img
-              src="./img/cosmetics1.png"
-              alt="fresh taste"
-              class="cosmetics__image"
-            />
-            <h4 class="cosmetics__item-title">Pomegranate seeds</h4>
-            <ul class="cosmetics__item-list">
-              <li class="item-list-elem">
-                <p class="cosmetics__list-description">
-                  Reverse skin damage and natural anti-aging for more youthful
-                  appearance
-                </p>
-              </li>
-              <li class="item-list-elem">
-                <p class="cosmetics__list-description">
-                  Deep hydration, anti-inflammatory & anti-aging punicic acid
-                </p>
-              </li>
-              <li class="item-list-elem">
-                <p class="cosmetics__list-description">
-                  Pro-estrogen for beautiful skin texture and collagen for
-                  firmer skin
-                </p>
-              </li>
-            </ul>
-          </li>
-
-          <li class="cosmetics__list-item">
-            <img
-              src="./img/cosmetics3.png"
-              alt="fresh taste"
-              class="cosmetics__image"
-            />
-            <h4 class="cosmetics__item-title">Aloe Vera</h4>
-            <ul class="cosmetics__item-list">
-              <li class="item-list-elem">
-                <p class="cosmetics__list-description">
-                  Antiseptic agents to help inhibit fungi, bacteria, and viruses
-                </p>
-              </li>
-              <li class="item-list-elem">
-                <p class="cosmetics__list-description">
-                  Stimulates fibroblast activity and prevents skin discoloration
-                </p>
-              </li>
-              <li class="item-list-elem">
-                <p class="cosmetics__list-description">
-                  Salicylic acid acts as an exfoliator, helping to gently slough
-                  off dead cells
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li class="cosmetics__list-item">
-            <img
-              src="./img/cosmetics4.png"
-              alt="fresh taste"
-              class="cosmetics__image"
-            />
-            <h4 class="cosmetics__item-title">Avocado</h4>
-            <ul class="cosmetics__item-list">
-              <li class="item-list-elem">
-                <p class="cosmetics__list-description">
-                  High in antioxidants and anti-inflammatory agents to calm and
-                  heal itchy skin
-                </p>
-              </li>
-              <li class="item-list-elem">
-                <p class="cosmetics__list-description">
-                  Hydration and moisturizing as well as shielding skin from
-                  ultraviolet radiation
-                </p>
-              </li>
-              <li class="item-list-elem">
-                <p class="cosmetics__list-description">
-                  Loaded with omega-3 fatty acids and vitamins A, D, and E to
-                  accelerate wound healing
-                </p>
-              </li>
-            </ul>
-          </li>
-          <li class="cosmetics__list-item">
-            <img
-              src="./img/cosmetics2.png"
-              alt="fresh taste"
-              class="cosmetics__image"
-            />
-            <h4 class="cosmetics__item-title">Lemongrass</h4>
-            <ul class="cosmetics__item-list">
-              <li class="item-list-elem">
-                <p class="cosmetics__list-description">
-                  The world's best natural skin toner
-                </p>
-              </li>
-              <li class="item-list-elem">
-                <p class="cosmetics__list-description">
-                  Antibacterial, antifungal & anti-inflammatory properties
-                  against skin infections
-                </p>
-              </li>
-              <li class="item-list-elem">
-                <p class="cosmetics__list-description">
-                  The scent relieves stress, anxiety, headaches and migraine
-                </p>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-
-      <section class="wow">
-        <div class="section-title-wrapper">
-          <div class="section-logo-wrapper">
-            <img
-              class="section-logo"
-              src="./img/svg/story_section-logo.svg"
-              alt="Sanycare"
-            />
-          </div>
-
-          <h2 class="section-title">
-            THE ALL-IN-ONE WOW-EFFECT FOR SUMMER 2020
-          </h2>
-        </div>
-        <div class="custom-container">
-          <ul class="wow__list">
-            <li class="wow__list-item">
-              <div class="wow__icon-wrapper">
-                <div
-                  class="wow__item-inner-wrapper"
-                  style="
-                    background-image: url('./img/wow-effect/wow-item1.png');
-                  "
-                ></div>
-              </div>
-              <p class="wow__list-item-text">
-                100% Organic, Plant-based Ingredients
-              </p>
-            </li>
-            <li class="wow__list-item">
-              <div class="wow__icon-wrapper">
-                <div
-                  class="wow__item-inner-wrapper"
-                  style="
-                    background-image: url('./img/wow-effect/wow-item2.svg');
-                  "
-                ></div>
-              </div>
-              <p class="wow__list-item-text">
-                Nourishing Natural Oils
-              </p>
-            </li>
-            <li class="wow__list-item">
-              <div class="wow__icon-wrapper">
-                <div
-                  class="wow__item-inner-wrapper"
-                  style="
-                    background-image: url('./img/wow-effect/wow-item3.png');
-                  "
-                ></div>
-              </div>
-              <p class="wow__list-item-text">
-                Kills Enveloped Viruses, like COVID-19
-              </p>
-            </li>
-            <li class="wow__list-item">
-              <div class="wow__icon-wrapper">
-                <div
-                  class="wow__item-inner-wrapper"
-                  style="
-                    background-image: url('./img/wow-effect/wow-item4.png');
-                  "
-                ></div>
-              </div>
-              <p class="wow__list-item-text">
-                Kills 99,999% Bacteria
-              </p>
-            </li>
-            <li class="wow__list-item">
-              <div class="wow__icon-wrapper">
-                <div
-                  class="wow__item-inner-wrapper"
-                  style="
-                    background-image: url('./img/wow-effect/wow-item5.png');
-                  "
-                ></div>
-              </div>
-              <p class="wow__list-item-text">
-                Made in Austria
-              </p>
-            </li>
-            <li class="wow__list-item">
-              <div class="wow__icon-wrapper">
-                <div
-                  class="wow__item-inner-wrapper"
-                  style="background-image: url('./img/wow-effect/6.png');"
-                ></div>
-              </div>
-              <p class="wow__list-item-text">
-                Sustainable Packaging
-              </p>
-            </li>
-            <li class="wow__list-item">
-              <div class="wow__icon-wrapper">
-                <div
-                  class="wow__item-inner-wrapper"
-                  style="
-                    background-image: url('./img/wow-effect/wow-item7.png');
-                  "
-                ></div>
-              </div>
-              <p class="wow__list-item-text">
-                No Parabens
-              </p>
-            </li>
-            <li class="wow__list-item">
-              <div class="wow__icon-wrapper">
-                <div
-                  class="wow__item-inner-wrapper"
-                  style="
-                    background-image: url('./img/wow-effect/wow-item8.png');
-                  "
-                ></div>
-              </div>
-              <p class="wow__list-item-text">
-                No Emollients or Emulsifiers
-              </p>
-            </li>
-            <li class="wow__list-item">
-              <div class="wow__icon-wrapper">
-                <div
-                  class="wow__item-inner-wrapper"
-                  style="
-                    background-image: url('./img/wow-effect/wow-item9.png');
-                  "
-                ></div>
-              </div>
-              <p class="wow__list-item-text">
-                Holistic Approach: Be the Drop to Impact
-              </p>
-            </li>
-            <li class="wow__list-item">
-              <div class="wow__icon-wrapper">
-                <div
-                  class="wow__item-inner-wrapper"
-                  style="
-                    background-image: url('./img/wow-effect/wow-item10.png');
-                  "
-                ></div>
-              </div>
-              <p class="wow__list-item-text">
-                DIN EN 13727, 13624, 1500, 14476 tested
-              </p>
-            </li>
-            <li class="wow__list-item">
-              <div class="wow__icon-wrapper">
-                <div
-                  class="wow__item-inner-wrapper"
-                  style="
-                    background-image: url('./img/wow-effect/wow-item11.png');
-                  "
-                ></div>
-              </div>
-              <p class="wow__list-item-text">
-                Custom Options
-              </p>
-            </li>
-            <li class="wow__list-item">
-              <div class="wow__icon-wrapper">
-                <div
-                  class="wow__item-inner-wrapper"
-                  style="
-                    background-image: url('./img/wow-effect/wow-item12.png');
-                  "
-                ></div>
-              </div>
-              <p class="wow__list-item-text">
-                Donations to Social Projects
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="match">
-        <div class="match_inner-wrapper">
-          <div class="match__content-wrapper">
-            <div class="section-title-wrapper match__title-wrapper">
-              <div class="section-logo-wrapper">
-                <img
-                  class="section-logo"
-                  src="./img/svg/story_section-logo.svg"
-                  alt="Sanycare"
-                />
-              </div>
-
-              <h2 class="section-title match__title">
-                Mix and match
-              </h2>
-            </div>
-            <div class="match__content-inner-wrapper">
-              <div class="order__btn-wrapper order__btn-wrapper-md">
-                <p class="order__description">
-                  Mix & Match each part of the BEYOND RESILIENCE bottle to
-                  create your customised design that matches your lifestyle,
-                  personality and mood – every day!
-                  <span>Choose your:</span>
-                </p>
-                <ul class="story__list">
-                  <li class="story__list-item">
-                    <p class="story__text">
-                      <span>Spray head style</span>: sportive, luxury premium or
-                      an exclusive wooden bamboo spray head
-                    </p>
-                  </li>
-                  <li class="story__list-item">
-                    <p class="story__text">
-                      <span>Glass bottle colour</span>: ocean blue, grass green,
-                      amber brown, snow white
-                    </p>
-                  </li>
-                  <li class="story__list-item">
-                    <p class="story__text">
-                      <span>Glass bottle finishing</span>: clear or frosted
-                    </p>
-                  </li>
-                  <li class="story__list-item">
-                    <p class="story__text">
-                      <span>Size of bottle</span>: 100ml or 50ml for your office
-                      desk? 30ml for your bag or the convenient 10ml version as
-                      "drop-to-go"?
-                    </p>
-                  </li>
-                  <li class="story__list-item">
-                    <p class="story__text">
-                      <span>Own design</span>: contact us for your very own
-                      bespoke BEYOND RESILIENCE Limited Edition!
-                    </p>
-                  </li>
-                </ul>
-                <p class="story__text order-text">
-                  You mix it, we match it.
-                </p>
-
-                <a
-                  class="order__button order__button-md"
-                  href="mailto:wow@b-resilience.com?subject=I want to order my Beyond Resilience WOW-Effect"
-                >
-                  Order your wow-effect
-                </a>
-              </div>
-
-              <div class="order">
-                <div class="order__picture-wrapper">
-                  <div class="carousel carousel-slider" id="carousel">
-                    <div
-                      href="#one!"
-                      class="carousel-item slider__img"
-                      style="
-                        background-image: url('./img/match_slider/match_slider-1.jpg');
-                      "
-                    ></div>
-                    <div
-                      href="#two!"
-                      class="carousel-item slider__img"
-                      style="
-                        background-image: url('./img/match_slider/match_slider-2.jpg');
-                      "
-                    ></div>
-                    <div
-                      href="#three!"
-                      class="carousel-item slider__img"
-                      style="
-                        background-image: url('./img/match_slider/match_slider-3.jpg');
-                      "
-                    ></div>
-                    <div
-                      href="#four!"
-                      class="carousel-item slider__img"
-                      style="
-                        background-image: url('./img/match_slider/match_slider-4.jpg');
-                      "
-                    ></div>
-                    <div class="order__picture-overlay"></div>
-                  </div>
+                    <h2 class="section-title">The story</h2>
                 </div>
-                <div class="order__btn-wrapper order__btn-wrapper-sm">
-                  <p class="order__description">
-                    Mix & Match each part of the SANYCARE bottle to create your
-                    customised design that matches your lifestyle, personality
-                    and mood – every day!
-                    <span>Choose your:</span>
-                  </p>
-                  <div class="custom-container">
-                    <ul class="story__list">
-                      <li class="story__list-item">
-                        <p class="story__text">
-                          <span>Spray head style</span>: sportive, luxury
-                          premium or exclusive wooden spray head
-                        </p>
-                      </li>
-                      <li class="story__list-item">
-                        <p class="story__text">
-                          <span>Glass bottle colour</span>: ocean blue, grass
-                          green, amber brown, snow white
-                        </p>
-                      </li>
-                      <li class="story__list-item">
-                        <p class="story__text">
-                          <span>Glass bottle finishing</span>: clear or frosted
-                        </p>
-                      </li>
-                      <li class="story__list-item">
-                        <p class="story__text">
-                          <span>Size of bottle</span>: 100 ml for your office
-                          desk? Or 10 ml as drop-to-go?
-                        </p>
-                      </li>
-                      <li class="story__list-item">
-                        <p class="story__text">
-                          <span>Own design</span>: contact us for your very own
-                          bespoke SANYCARE Limited Edition!
-                        </p>
-                      </li>
-                    </ul>
-                    <p class="story__text order-text">
-                      You mix it, we match it.
-                    </p>
-                  </div>
-                  <a
-                    class="order__button"
-                    href="mailto:wow@b-resilience.com?subject=I want to order my Beyond Resilience WOW-Effect"
-                  >
-                    Order your wow-effect
-                  </a>
+                <div class="story__video-wrapper">
+                    <iframe
+                        src="https://www.youtube.com/embed/eYa6KcqlaFA?vq=hd1080&autoplay=1&rel=0&cc_load_policy=1&iv_load_policy=3"
+                        width="560"
+                        height="315"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="bespoke">
-          <a
-            href="mailto:corporate@b-resilience.com?subject=I want BEYOND RESILIENCE for my business"
-            class="bespoke__link"
-          >
-            <div
-              class="bespoke-wrapper"
-              style="background-image: url(./img/bespoke.jpg);"
-            >
-              <div class="bespoke__overlay">
-                <div class="bespoke__content-wrapper">
-                  <div class="bespoke__title-wrapper">
-                    <h3 class="bespoke__description">
-                      Bespoke design, custom packaging and flexible order
-                      quantities:
-                    </h3>
-                    <h2 class="bespoke__title">
-                      Start a corporate partnership with us.
+                <div class="custom-container">
+                    <div class="story__text-wrapper text-wrapper">
+                        <h4 class="cosmetics__item-title story__subheading">
+                            A MUST-HAVE ACCESSORY THAT COMBINES CARE,
+                            DISINFECTION & DESIGN
+                        </h4>
+                        <p class="story__text story__description">
+                            BEYOND RESILIENCE is the all-in-one WOW-effect that
+                            everyone was looking for: highly innovative,
+                            scientifically tested bio-cosmetics for your hands
+                            that do not only kill 99,999% of bacteria and
+                            enveloped viruses like COVID-19, but also nourish
+                            your skin with exclusive natural ingredients such as
+                            Pomegranate, Avocado and Aloe Vera. The refreshing
+                            scent of Lemongrass awakens body and mind in any
+                            life situation and the bespoke premium packaging
+                            fulfills the most discerning demands.
+                        </p>
+                        <div class="story__list">
+                            <div class="story__list-inner-wrapper">
+                                <div class="story__list-item">
+                                    <p class="story__text">
+                                        Made in Austria
+                                    </p>
+                                </div>
+                                <div class="story__list-item">
+                                    <p class="story__text">
+                                        Radical, progressive, unique
+                                    </p>
+                                </div>
+                                <div class="story__list-item">
+                                    <p class="story__text">
+                                        Natural ingredients instead of crude oil
+                                        and aggressive chemicals
+                                    </p>
+                                </div>
+                                <div class="story__list-item">
+                                    <p class="story__text">
+                                        Shake well before usage: We are proud
+                                        that BEYOND RESILIENCE does not contain
+                                        any silicones, parabens or emulsifiers.
+                                    </p>
+                                </div>
+                                <div class="story__list-item">
+                                    <p class="story__text">
+                                        Sustainable, premium glass packaging and
+                                        refill options
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="story__list-inner-wrapper">
+                                <div class="story__list-item">
+                                    <div class="story__list-item-wrap">
+                                        <p class="story__text">
+                                            Outstanding laboratory results
+                                        </p>
+                                        <ul class="story__inner-list">
+                                            <li class="story__inner-list-item">
+                                                <p class="story__text">
+                                                    Effective in only 30 sec.
+                                                    against 99,999% of bacteria
+                                                    and enveloped viruses
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="story__list-item">
+                                    <div class="story__list-item-wrap">
+                                        <p class="story__text">
+                                            Holistic approach “Be the Drop to
+                                            Impact”:
+                                        </p>
+                                        <ul class="story__inner-list">
+                                            <li class="story__inner-list-item">
+                                                <p class="story__text">
+                                                    Global lifestyle community
+                                                </p>
+                                            </li>
+                                            <li class="story__inner-list-item">
+                                                <p class="story__text">
+                                                    Awareness for your own
+                                                    mental and physical health
+                                                </p>
+                                            </li>
+                                            <li class="story__inner-list-item">
+                                                <p class="story__text">
+                                                    Donations to social projects
+                                                </p>
+                                            </li>
+                                            <li class="story__inner-list-item">
+                                                <p class="story__text">
+                                                    Awareness for sustainability
+                                                    and environment
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="story__list-item">
+                                    <p class="story__text">
+                                        Mix & Match packaging philosophy to
+                                        match your very own taste and mood every
+                                        day
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story__tagline tagline">
+                    <img
+                        src="./img/story_tagline-img.png"
+                        alt="hand in hand"
+                        class="tagline__img"
+                    />
+                    <img
+                        src="./img/svg/tagline_logo.svg"
+                        alt="BEYOND RESILIENCE logo"
+                        class="tagline__icon"
+                    />
+                </div>
+                <div class="product-banner-wrapper">
+                    <div class="product-banner-inner-wrapper">
+                        <picture>
+                            <source
+                                media="(min-width: 768px)"
+                                srcset="./img/story__products-pic@3x.jpeg"
+                            />
+
+                            <img
+                                src="./img/story/story_products.jpeg"
+                                alt="BEYOND RESILIENCE products"
+                                class="banner-wrapper__img"
+                            />
+                        </picture>
+                        <img
+                            src="./img/story_products-leaf.png"
+                            alt="#"
+                            class="banner-wrapper__leaf-img"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section class="cosmetics">
+                <div class="section-title-wrapper cosmetics__title-wrapper">
+                    <div class="section-logo-wrapper">
+                        <img
+                            class="section-logo"
+                            src="./img/svg/story_section-logo.svg"
+                            alt="BEYOND RESILIENCE"
+                        />
+                    </div>
+
+                    <h2 class="section-title cosmetics__title">
+                        EXCLUSIVE, SANITISING BIO-COSMETICS FOR YOUR HANDS
                     </h2>
-                  </div>
-                  <div class="bespoke__img-wrapper">
-                    <img
-                      class="bespoke__logo"
-                      src="./img/bespoke/bespoke_logo.png"
-                      alt="sanycare logotype"
-                    />
-                    <img
-                      class="bespoke__handshake"
-                      src="./img/bespoke/handshake.svg"
-                      alt="handshake"
-                    />
-                  </div>
                 </div>
-              </div>
-            </div>
-          </a>
-        </div>
+                <ul class="cosmetics__list">
+                    <li class="cosmetics__list-item">
+                        <img
+                            src="./img/cosmetics1.png"
+                            alt="fresh taste"
+                            class="cosmetics__image"
+                        />
+                        <h4 class="cosmetics__item-title">Pomegranate seeds</h4>
+                        <ul class="cosmetics__item-list">
+                            <li class="item-list-elem">
+                                <p class="cosmetics__list-description">
+                                    Reverse skin damage and natural anti-aging
+                                    for more youthful appearance
+                                </p>
+                            </li>
+                            <li class="item-list-elem">
+                                <p class="cosmetics__list-description">
+                                    Deep hydration, anti-inflammatory &
+                                    anti-aging punicic acid
+                                </p>
+                            </li>
+                            <li class="item-list-elem">
+                                <p class="cosmetics__list-description">
+                                    Pro-estrogen for beautiful skin texture and
+                                    collagen for firmer skin
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
 
-        <div class="story__tagline tagline">
-          <img
-            src="./img/story_tagline-img.png"
-            alt="hand in hand"
-            class="tagline__img"
-          />
-          <img
-            src="./img/svg/tagline_logo.svg"
-            alt="sanycare logo"
-            class="tagline__icon"
-          />
-        </div>
-      </section>
-      <img
-        src="./img/drop_banner.jpg"
-        alt="hand in hand sanycare"
-        class="drop__img"
-      />
-      <section class="drop">
-        <div class="section-title-wrapper">
-          <div class="section-logo-wrapper">
+                    <li class="cosmetics__list-item">
+                        <img
+                            src="./img/cosmetics3.png"
+                            alt="fresh taste"
+                            class="cosmetics__image"
+                        />
+                        <h4 class="cosmetics__item-title">Aloe Vera</h4>
+                        <ul class="cosmetics__item-list">
+                            <li class="item-list-elem">
+                                <p class="cosmetics__list-description">
+                                    Antiseptic agents to help inhibit fungi,
+                                    bacteria, and viruses
+                                </p>
+                            </li>
+                            <li class="item-list-elem">
+                                <p class="cosmetics__list-description">
+                                    Stimulates fibroblast activity and prevents
+                                    skin discoloration
+                                </p>
+                            </li>
+                            <li class="item-list-elem">
+                                <p class="cosmetics__list-description">
+                                    Salicylic acid acts as an exfoliator,
+                                    helping to gently slough off dead cells
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cosmetics__list-item">
+                        <img
+                            src="./img/cosmetics4.png"
+                            alt="fresh taste"
+                            class="cosmetics__image"
+                        />
+                        <h4 class="cosmetics__item-title">Avocado</h4>
+                        <ul class="cosmetics__item-list">
+                            <li class="item-list-elem">
+                                <p class="cosmetics__list-description">
+                                    High in antioxidants and anti-inflammatory
+                                    agents to calm and heal itchy skin
+                                </p>
+                            </li>
+                            <li class="item-list-elem">
+                                <p class="cosmetics__list-description">
+                                    Hydration and moisturizing as well as
+                                    shielding skin from ultraviolet radiation
+                                </p>
+                            </li>
+                            <li class="item-list-elem">
+                                <p class="cosmetics__list-description">
+                                    Loaded with omega-3 fatty acids and vitamins
+                                    A, D, and E to accelerate wound healing
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="cosmetics__list-item">
+                        <img
+                            src="./img/cosmetics2.png"
+                            alt="fresh taste"
+                            class="cosmetics__image"
+                        />
+                        <h4 class="cosmetics__item-title">Lemongrass</h4>
+                        <ul class="cosmetics__item-list">
+                            <li class="item-list-elem">
+                                <p class="cosmetics__list-description">
+                                    The world's best natural skin toner
+                                </p>
+                            </li>
+                            <li class="item-list-elem">
+                                <p class="cosmetics__list-description">
+                                    Antibacterial, antifungal &
+                                    anti-inflammatory properties against skin
+                                    infections
+                                </p>
+                            </li>
+                            <li class="item-list-elem">
+                                <p class="cosmetics__list-description">
+                                    The scent relieves stress, anxiety,
+                                    headaches and migraine
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="wow">
+                <div class="section-title-wrapper">
+                    <div class="section-logo-wrapper">
+                        <img
+                            class="section-logo"
+                            src="./img/svg/story_section-logo.svg"
+                            alt="BEYOND RESILIENCE"
+                        />
+                    </div>
+
+                    <h2 class="section-title">
+                        THE ALL-IN-ONE WOW-EFFECT FOR SUMMER 2020
+                    </h2>
+                </div>
+                <div class="custom-container">
+                    <ul class="wow__list">
+                        <li class="wow__list-item">
+                            <div class="wow__icon-wrapper">
+                                <div
+                                    class="wow__item-inner-wrapper"
+                                    style="
+                                        background-image: url('./img/wow-effect/wow-item1.png');
+                                    "
+                                ></div>
+                            </div>
+                            <p class="wow__list-item-text">
+                                100% Organic, Plant-based Ingredients
+                            </p>
+                        </li>
+                        <li class="wow__list-item">
+                            <div class="wow__icon-wrapper">
+                                <div
+                                    class="wow__item-inner-wrapper"
+                                    style="
+                                        background-image: url('./img/wow-effect/wow-item2.svg');
+                                    "
+                                ></div>
+                            </div>
+                            <p class="wow__list-item-text">
+                                Nourishing Natural Oils
+                            </p>
+                        </li>
+                        <li class="wow__list-item">
+                            <div class="wow__icon-wrapper">
+                                <div
+                                    class="wow__item-inner-wrapper"
+                                    style="
+                                        background-image: url('./img/wow-effect/wow-item3.png');
+                                    "
+                                ></div>
+                            </div>
+                            <p class="wow__list-item-text">
+                                Kills Enveloped Viruses, like COVID-19
+                            </p>
+                        </li>
+                        <li class="wow__list-item">
+                            <div class="wow__icon-wrapper">
+                                <div
+                                    class="wow__item-inner-wrapper"
+                                    style="
+                                        background-image: url('./img/wow-effect/wow-item4.png');
+                                    "
+                                ></div>
+                            </div>
+                            <p class="wow__list-item-text">
+                                Kills 99,999% Bacteria
+                            </p>
+                        </li>
+                        <li class="wow__list-item">
+                            <div class="wow__icon-wrapper">
+                                <div
+                                    class="wow__item-inner-wrapper"
+                                    style="
+                                        background-image: url('./img/wow-effect/wow-item5.png');
+                                    "
+                                ></div>
+                            </div>
+                            <p class="wow__list-item-text">
+                                Made in Austria
+                            </p>
+                        </li>
+                        <li class="wow__list-item">
+                            <div class="wow__icon-wrapper">
+                                <div
+                                    class="wow__item-inner-wrapper"
+                                    style="
+                                        background-image: url('./img/wow-effect/6.png');
+                                    "
+                                ></div>
+                            </div>
+                            <p class="wow__list-item-text">
+                                Sustainable Packaging
+                            </p>
+                        </li>
+                        <li class="wow__list-item">
+                            <div class="wow__icon-wrapper">
+                                <div
+                                    class="wow__item-inner-wrapper"
+                                    style="
+                                        background-image: url('./img/wow-effect/wow-item7.png');
+                                    "
+                                ></div>
+                            </div>
+                            <p class="wow__list-item-text">
+                                No Parabens
+                            </p>
+                        </li>
+                        <li class="wow__list-item">
+                            <div class="wow__icon-wrapper">
+                                <div
+                                    class="wow__item-inner-wrapper"
+                                    style="
+                                        background-image: url('./img/wow-effect/wow-item8.png');
+                                    "
+                                ></div>
+                            </div>
+                            <p class="wow__list-item-text">
+                                No Emollients or Emulsifiers
+                            </p>
+                        </li>
+                        <li class="wow__list-item">
+                            <div class="wow__icon-wrapper">
+                                <div
+                                    class="wow__item-inner-wrapper"
+                                    style="
+                                        background-image: url('./img/wow-effect/wow-item9.png');
+                                    "
+                                ></div>
+                            </div>
+                            <p class="wow__list-item-text">
+                                Holistic Approach: Be the Drop to Impact
+                            </p>
+                        </li>
+                        <li class="wow__list-item">
+                            <div class="wow__icon-wrapper">
+                                <div
+                                    class="wow__item-inner-wrapper"
+                                    style="
+                                        background-image: url('./img/wow-effect/wow-item10.png');
+                                    "
+                                ></div>
+                            </div>
+                            <p class="wow__list-item-text">
+                                DIN EN 13727, 13624, 1500, 14476 tested
+                            </p>
+                        </li>
+                        <li class="wow__list-item">
+                            <div class="wow__icon-wrapper">
+                                <div
+                                    class="wow__item-inner-wrapper"
+                                    style="
+                                        background-image: url('./img/wow-effect/wow-item11.png');
+                                    "
+                                ></div>
+                            </div>
+                            <p class="wow__list-item-text">
+                                Custom Options
+                            </p>
+                        </li>
+                        <li class="wow__list-item">
+                            <div class="wow__icon-wrapper">
+                                <div
+                                    class="wow__item-inner-wrapper"
+                                    style="
+                                        background-image: url('./img/wow-effect/wow-item12.png');
+                                    "
+                                ></div>
+                            </div>
+                            <p class="wow__list-item-text">
+                                Donations to Social Projects
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="match">
+                <div class="match_inner-wrapper">
+                    <div class="match__content-wrapper">
+                        <div class="section-title-wrapper match__title-wrapper">
+                            <div class="section-logo-wrapper">
+                                <img
+                                    class="section-logo"
+                                    src="./img/svg/story_section-logo.svg"
+                                    alt="BEYOND RESILIENCE"
+                                />
+                            </div>
+
+                            <h2 class="section-title match__title">
+                                Mix and match
+                            </h2>
+                        </div>
+                        <div class="match__content-inner-wrapper">
+                            <div
+                                class="order__btn-wrapper order__btn-wrapper-md"
+                            >
+                                <p class="order__description">
+                                    Mix & Match each part of the BEYOND
+                                    RESILIENCE bottle to create your customised
+                                    design that matches your lifestyle,
+                                    personality and mood – every day!
+                                    <span>Choose your:</span>
+                                </p>
+                                <ul class="story__list">
+                                    <li class="story__list-item">
+                                        <p class="story__text">
+                                            <span>Spray head style</span>:
+                                            sportive, luxury premium or an
+                                            exclusive wooden bamboo spray head
+                                        </p>
+                                    </li>
+                                    <li class="story__list-item">
+                                        <p class="story__text">
+                                            <span>Glass bottle colour</span>:
+                                            ocean blue, grass green, amber
+                                            brown, snow white
+                                        </p>
+                                    </li>
+                                    <li class="story__list-item">
+                                        <p class="story__text">
+                                            <span>Glass bottle finishing</span>:
+                                            clear or frosted
+                                        </p>
+                                    </li>
+                                    <li class="story__list-item">
+                                        <p class="story__text">
+                                            <span>Size of bottle</span>: 100ml
+                                            or 50ml for your office desk? 30ml
+                                            for your bag or the convenient 10ml
+                                            version as "drop-to-go"?
+                                        </p>
+                                    </li>
+                                    <li class="story__list-item">
+                                        <p class="story__text">
+                                            <span>Own design</span>: contact us
+                                            for your very own bespoke BEYOND
+                                            RESILIENCE Limited Edition!
+                                        </p>
+                                    </li>
+                                </ul>
+                                <p class="story__text order-text">
+                                    You mix it, we match it.
+                                </p>
+
+                                <a
+                                    class="order__button order__button-md"
+                                    href="mailto:wow@b-resilience.com?subject=I want to order my Beyond Resilience WOW-Effect"
+                                >
+                                    Order your wow-effect
+                                </a>
+                            </div>
+
+                            <div class="order">
+                                <div class="order__picture-wrapper">
+                                    <div
+                                        class="carousel carousel-slider"
+                                        id="carousel"
+                                    >
+                                        <div
+                                            href="#one!"
+                                            class="carousel-item slider__img"
+                                            style="
+                                                background-image: url('./img/match_slider/match_slider-1.jpg');
+                                            "
+                                        ></div>
+                                        <div
+                                            href="#two!"
+                                            class="carousel-item slider__img"
+                                            style="
+                                                background-image: url('./img/match_slider/match_slider-2.jpg');
+                                            "
+                                        ></div>
+                                        <div
+                                            href="#three!"
+                                            class="carousel-item slider__img"
+                                            style="
+                                                background-image: url('./img/match_slider/match_slider-3.jpg');
+                                            "
+                                        ></div>
+                                        <div
+                                            href="#four!"
+                                            class="carousel-item slider__img"
+                                            style="
+                                                background-image: url('./img/match_slider/match_slider-4.jpg');
+                                            "
+                                        ></div>
+                                        <div
+                                            class="order__picture-overlay"
+                                        ></div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="order__btn-wrapper order__btn-wrapper-sm"
+                                >
+                                    <p class="order__description">
+                                        Mix & Match each part of the BEYOND RESILIENCE
+                                        bottle to create your customised design
+                                        that matches your lifestyle, personality
+                                        and mood – every day!
+                                        <span>Choose your:</span>
+                                    </p>
+                                    <div class="custom-container">
+                                        <ul class="story__list">
+                                            <li class="story__list-item">
+                                                <p class="story__text">
+                                                    <span>Spray head style</span
+                                                    >: sportive, luxury premium
+                                                    or exclusive wooden spray
+                                                    head
+                                                </p>
+                                            </li>
+                                            <li class="story__list-item">
+                                                <p class="story__text">
+                                                    <span
+                                                        >Glass bottle
+                                                        colour</span
+                                                    >: ocean blue, grass green,
+                                                    amber brown, snow white
+                                                </p>
+                                            </li>
+                                            <li class="story__list-item">
+                                                <p class="story__text">
+                                                    <span
+                                                        >Glass bottle
+                                                        finishing</span
+                                                    >: clear or frosted
+                                                </p>
+                                            </li>
+                                            <li class="story__list-item">
+                                                <p class="story__text">
+                                                    <span>Size of bottle</span>:
+                                                    100 ml for your office desk?
+                                                    Or 10 ml as drop-to-go?
+                                                </p>
+                                            </li>
+                                            <li class="story__list-item">
+                                                <p class="story__text">
+                                                    <span>Own design</span>:
+                                                    contact us for your very own
+                                                    bespoke BEYOND RESILIENCE Limited
+                                                    Edition!
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <p class="story__text order-text">
+                                            You mix it, we match it.
+                                        </p>
+                                    </div>
+                                    <a
+                                        class="order__button"
+                                        href="mailto:wow@b-resilience.com?subject=I want to order my Beyond Resilience WOW-Effect"
+                                    >
+                                        Order your wow-effect
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bespoke">
+                    <a
+                        href="mailto:corporate@b-resilience.com?subject=I want BEYOND RESILIENCE for my business"
+                        class="bespoke__link"
+                    >
+                        <div
+                            class="bespoke-wrapper"
+                            style="background-image: url(./img/bespoke.jpg);"
+                        >
+                            <div class="bespoke__overlay">
+                                <div class="bespoke__content-wrapper">
+                                    <div class="bespoke__title-wrapper">
+                                        <h3 class="bespoke__description">
+                                            Bespoke design, custom packaging and
+                                            flexible order quantities:
+                                        </h3>
+                                        <h2 class="bespoke__title">
+                                            Start a corporate partnership with
+                                            us.
+                                        </h2>
+                                    </div>
+                                    <div class="bespoke__img-wrapper">
+                                        <img
+                                            class="bespoke__logo"
+                                            src="./img/bespoke/bespoke_logo.png"
+                                            alt="BEYOND RESILIENCE logotype"
+                                        />
+                                        <img
+                                            class="bespoke__handshake"
+                                            src="./img/bespoke/handshake.svg"
+                                            alt="handshake"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="story__tagline tagline">
+                    <img
+                        src="./img/story_tagline-img.png"
+                        alt="hand in hand"
+                        class="tagline__img"
+                    />
+                    <img
+                        src="./img/svg/tagline_logo.svg"
+                        alt="BEYOND RESILIENCE logo"
+                        class="tagline__icon"
+                    />
+                </div>
+            </section>
             <img
-              class="section-logo"
-              src="./img/svg/story_section-logo.svg"
-              alt="Sanycare"
+                src="./img/drop_banner.jpg"
+                alt="hand in hand BEYOND RESILIENCE"
+                class="drop__img"
             />
-          </div>
+            <section class="drop">
+                <div class="section-title-wrapper">
+                    <div class="section-logo-wrapper">
+                        <img
+                            class="section-logo"
+                            src="./img/svg/story_section-logo.svg"
+                            alt="BEYOND RESILIENCE"
+                        />
+                    </div>
 
-          <h2 class="section-title drop__title">
-            Be the drop to impact
-          </h2>
-        </div>
+                    <h2 class="section-title drop__title">
+                        Be the drop to impact
+                    </h2>
+                </div>
 
-        <div class="drop__text-wrapper custom-container">
-          <p class="drop__text drop__text-title">
-            <span class="drop__text-span"> RESILIENCE?</span> – “Characteristic
-            of elastic material to turn back to its original form; the mental
-            ability to bounce back with strength.”
-          </p>
-          <p class="drop__text drop__list-title">
-            <span class="drop__text-span drop__list-title-block">WHY BEYOND RESILIENCE?</span><span class="drop__text-temporary"> -</span>
-            Resilience in terms of ...
-          </p>
+                <div class="drop__text-wrapper custom-container">
+                    <p class="drop__text drop__text-title">
+                        <span class="drop__text-span"> RESILIENCE?</span> –
+                        “Characteristic of elastic material to turn back to its
+                        original form; the mental ability to bounce back with
+                        strength.”
+                    </p>
+                    <p class="drop__text drop__list-title">
+                        <span class="drop__text-span drop__list-title-block"
+                            >WHY BEYOND RESILIENCE?</span
+                        ><span class="drop__text-temporary"> -</span>
+                        Resilience in terms of ...
+                    </p>
 
-          <div class="drop__list">
-            <p class="drop__text drop__before">
-              Hygiene: Protection against bacteria and viruses.
-            </p>
-            <p class="drop__text drop__before">
-              Cosmetics & Beauty: A resilient body is fundamental for beauty.
-            </p>
-            <p class="drop__text drop__before">
-              Nature: Only resilient plants contribute to the lifecycle of
-              nature.
-            </p>
-            <p class="drop__text drop__before">
-              Personal growth: Growth lies in the ability to accept challenges,
-              reflect and learn from them.
-            </p>
-            <p class="drop__text drop__before">
-              Business: Resilient companies and entrepreneurs as a basis for
-              success and for using challenges as opportunities.
-            </p>
-            <p class="drop__text drop__before">
-              Social projects: Supporting underprivileged people for more
-              resilience in their everyday life.
-            </p>
-          </div>
+                    <div class="drop__list">
+                        <p class="drop__text drop__before">
+                            Hygiene: Protection against bacteria and viruses.
+                        </p>
+                        <p class="drop__text drop__before">
+                            Cosmetics & Beauty: A resilient body is fundamental
+                            for beauty.
+                        </p>
+                        <p class="drop__text drop__before">
+                            Nature: Only resilient plants contribute to the
+                            lifecycle of nature.
+                        </p>
+                        <p class="drop__text drop__before">
+                            Personal growth: Growth lies in the ability to
+                            accept challenges, reflect and learn from them.
+                        </p>
+                        <p class="drop__text drop__before">
+                            Business: Resilient companies and entrepreneurs as a
+                            basis for success and for using challenges as
+                            opportunities.
+                        </p>
+                        <p class="drop__text drop__before">
+                            Social projects: Supporting underprivileged people
+                            for more resilience in their everyday life.
+                        </p>
+                    </div>
 
-          <p class="drop__text">
-            More than just „normal“ resilience, but far beyond the usual:
-            <b>Beyond Resilience</b>. Grow beyond, be resilient – create your
-            own new normal every day!
-          </p>
-          <!-- <p class="drop__text">
+                    <p class="drop__text">
+                        More than just „normal“ resilience, but far beyond the
+                        usual:
+                        <b>Beyond Resilience</b>. Grow beyond, be resilient –
+                        create your own new normal every day!
+                    </p>
+                    <!-- <p class="drop__text">
             There is only one NATURE.
             <span class="drop__text-span"
               >Care about the
@@ -842,89 +907,90 @@
               normal!</span
             >
           </p> -->
-        </div>
-      </section>
-      <div class="contact__banner">
-        <a
-          href="mailto:distributor@b-resilience.com?subject=I want to become a BEYOND RESILIENCE Distributor"
-          class="distributor__link"
-        >
-          <picture>
-            <source
-              media="(min-width: 1024px)"
-              srcset="./img/distributor-pic-lg.jpeg"
-            />
+                </div>
+            </section>
+            <div class="contact__banner">
+                <a
+                    href="mailto:distributor@b-resilience.com?subject=I want to become a BEYOND RESILIENCE Distributor"
+                    class="distributor__link"
+                >
+                    <picture>
+                        <source
+                            media="(min-width: 1024px)"
+                            srcset="./img/distributor-pic-lg.jpeg"
+                        />
 
-            <img
-              src="./img/subscribe_distributor-img.png"
-              alt="become a distributor"
-              class="contact__banner-img"
-            />
-          </picture>
+                        <img
+                            src="./img/subscribe_distributor-img.png"
+                            alt="become a distributor"
+                            class="contact__banner-img"
+                        />
+                    </picture>
 
-          <div class="contact__banner-overlay"></div>
-          <div class="contact__banner-content">
-            <h2 class="contact__title">
-              How to become a distributor?
-            </h2>
+                    <div class="contact__banner-overlay"></div>
+                    <div class="contact__banner-content">
+                        <h2 class="contact__title">
+                            How to become a distributor?
+                        </h2>
 
-            <img
-              src="./img/subscribe_Distributor.png"
-              alt="become a distributor icon"
-              class="contact__icon"
-            />
-          </div>
-        </a>
-      </div>
+                        <img
+                            src="./img/subscribe_Distributor.png"
+                            alt="become a distributor icon"
+                            class="contact__icon"
+                        />
+                    </div>
+                </a>
+            </div>
 
-      <div class="subscribe-contact-wrapper">
-        <section class="subscribe">
-          <h2 class="section-title subscribe__title">
-            Drop your details here
-          </h2>
+            <div class="subscribe-contact-wrapper">
+                <section class="subscribe">
+                    <h2 class="section-title subscribe__title">
+                        Drop your details here
+                    </h2>
 
-          <p class="subscribe__description">
-            Give your inbox some love with refreshing news, new products & more.
-          </p>
-          <!-- Begin Mailchimp Signup Form -->
-          <div id="mc_embed_signup">
-            <form
-              action="https://dominatoryachts.us13.list-manage.com/subscribe/post?u=a339a5110d6f9d2720b10039d&amp;id=b647266bf8"
-              method="post"
-              id="mc-embedded-subscribe-form"
-              name="mc-embedded-subscribe-form"
-              class="validate subscribe__form custom-container"
-              target="_blank"
-              rel="nofollow noopener"
-              validate
-            >
-              <div id="mc_embed_signup_scroll">
-                <div class="subscribe__input-wrapper">
-                  <div class="mc-field-group">
-                    <input
-                      type="email"
-                      value=""
-                      name="EMAIL"
-                      class="required email subscribe__input"
-                      id="mce-EMAIL"
-                      placeholder="E-mail"
-                      minlength="6"
-                      required
-                    />
-                  </div>
-                  <div class="mc-field-group">
-                    <input
-                      type="text"
-                      value=""
-                      name="FNAME"
-                      class="required subscribe__input"
-                      id="mce-FNAME"
-                      placeholder="Name"
-                      minlength="2"
-                      required
-                    />
-                  </div>
-                  <!-- <div class="mc-field-group">
+                    <p class="subscribe__description">
+                        Give your inbox some love with refreshing news, new
+                        products & more.
+                    </p>
+                    <!-- Begin Mailchimp Signup Form -->
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://dominatoryachts.us13.list-manage.com/subscribe/post?u=a339a5110d6f9d2720b10039d&amp;id=b647266bf8"
+                            method="post"
+                            id="mc-embedded-subscribe-form"
+                            name="mc-embedded-subscribe-form"
+                            class="validate subscribe__form custom-container"
+                            target="_blank"
+                            rel="nofollow noopener"
+                            validate
+                        >
+                            <div id="mc_embed_signup_scroll">
+                                <div class="subscribe__input-wrapper">
+                                    <div class="mc-field-group">
+                                        <input
+                                            type="email"
+                                            value=""
+                                            name="EMAIL"
+                                            class="required email subscribe__input"
+                                            id="mce-EMAIL"
+                                            placeholder="E-mail"
+                                            minlength="6"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mc-field-group">
+                                        <input
+                                            type="text"
+                                            value=""
+                                            name="FNAME"
+                                            class="required subscribe__input"
+                                            id="mce-FNAME"
+                                            placeholder="Name"
+                                            minlength="2"
+                                            required
+                                        />
+                                    </div>
+                                    <!-- <div class="mc-field-group">
                                         <input
                                             type="text"
                                             value=""
@@ -935,7 +1001,7 @@
                                         />
                                     </div> -->
 
-                  <!-- <div class="mc-field-group select__wrapper">
+                                    <!-- <div class="mc-field-group select__wrapper">
                                         <select
                                             name="LOCATION"
                                             class="subscribe__input"
@@ -1652,169 +1718,179 @@
                                             >
                                         </select>
                                     </div> -->
-                </div>
+                                </div>
 
-                <div
-                  id="mergeRow-gdpr"
-                  class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group"
-                >
-                  <div class="content__gdprLegal">
-                    <p class="subscribe__text">
-                      By clicking on the submit button, you agree to receive
-                      marketing about BEYOND RESILIENCE products or events via
-                      email. You have the right at any time to withdraw your
-                      consent to the receipt of email marketing. For this
-                      purpose, please use the newsletter unsubscribe link
-                      provided in each newsletter email. The withdrawal of the
-                      consent does not affect the lawfulness of the processing
-                      based on consent before it withdrawal. Further
-                      information, in particular regarding your data subject
-                      rights, can be found in
-                      <a
-                        href="./pdf/GDPR & Privacy Policy SANY GmbH.pdf"
-                        target="_blank"
-                        rel="nofollow noopener"
-                        >the Privacy Policy.</a
-                      >
-                    </p>
-                  </div>
-                </div>
-                <div id="mce-responses" class="clear">
-                  <div
-                    class="response"
-                    id="mce-error-response"
-                    style="display: none;"
-                  ></div>
-                  <div
-                    class="response"
-                    id="mce-success-response"
-                    style="display: none;"
-                  ></div>
-                </div>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div
-                  style="position: absolute; left: -5000px;"
-                  aria-hidden="true"
-                >
-                  <input
-                    type="text"
-                    name="b_a339a5110d6f9d2720b10039d_b647266bf8"
-                    tabindex="-1"
-                    value=""
-                  />
-                </div>
-                <div class="clear">
-                  <input
-                    type="submit"
-                    value="Subscribe"
-                    name="subscribe"
-                    id="mc-embedded-subscribe"
-                    class="button subscribe__btn"
-                  />
-                </div>
-              </div>
-            </form>
-          </div>
+                                <div
+                                    id="mergeRow-gdpr"
+                                    class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group"
+                                >
+                                    <div class="content__gdprLegal">
+                                        <p class="subscribe__text">
+                                            By clicking on the submit button,
+                                            you agree to receive marketing about
+                                            BEYOND RESILIENCE products or events
+                                            via email. You have the right at any
+                                            time to withdraw your consent to the
+                                            receipt of email marketing. For this
+                                            purpose, please use the newsletter
+                                            unsubscribe link provided in each
+                                            newsletter email. The withdrawal of
+                                            the consent does not affect the
+                                            lawfulness of the processing based
+                                            on consent before it withdrawal.
+                                            Further information, in particular
+                                            regarding your data subject rights,
+                                            can be found in
+                                            <a
+                                                href="./pdf/GDPR & Privacy Policy SANY GmbH.pdf"
+                                                target="_blank"
+                                                rel="nofollow noopener"
+                                                >the Privacy Policy.</a
+                                            >
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="mce-responses" class="clear">
+                                    <div
+                                        class="response"
+                                        id="mce-error-response"
+                                        style="display: none;"
+                                    ></div>
+                                    <div
+                                        class="response"
+                                        id="mce-success-response"
+                                        style="display: none;"
+                                    ></div>
+                                </div>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div
+                                    style="position: absolute; left: -5000px;"
+                                    aria-hidden="true"
+                                >
+                                    <input
+                                        type="text"
+                                        name="b_a339a5110d6f9d2720b10039d_b647266bf8"
+                                        tabindex="-1"
+                                        value=""
+                                    />
+                                </div>
+                                <div class="clear">
+                                    <input
+                                        type="submit"
+                                        value="Subscribe"
+                                        name="subscribe"
+                                        id="mc-embedded-subscribe"
+                                        class="button subscribe__btn"
+                                    />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
 
-          <!--End mc_embed_signup-->
-        </section>
+                    <!--End mc_embed_signup-->
+                </section>
 
-        <div class="follow-contact-wrapper">
-          <section class="follow">
-            <h2 class="section-title subscribe__title follow_title">
-              Follow
-            </h2>
-            <ul class="follow__list">
-              <li class="follow__list-item">
-                <a
-                  href="https://www.instagram.com/beyond.resilience/"
-                  rel="nofollow noopener"
-                  target="__blank"
-                  class="follow__list-link"
-                >
-                  <svg class="follow__icon">
-                    <use
-                      xlink:href="./img/svg/follow_sprite.svg#folow_icon-instagram"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="follow__list-item">
-                <a
-                  href="https://www.facebook.com/beyond.resilience.skincare/"
-                  rel="nofollow noopener"
-                  target="__blank"
-                  class="follow__list-link"
-                >
-                  <svg class="follow__icon">
-                    <use
-                      xlink:href="./img/svg/follow_sprite.svg#folow_icon-facebook"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="follow__list-item">
-                <a
-                  href="https://www.youtube.com/channel/UCIU0MbBE03CtfYFavppWx6g/featured?view_as=subscriber"
-                  rel="nofollow noopener"
-                  target="__blank"
-                  class="follow__list-link"
-                >
-                  <svg class="follow__icon">
-                    <use
-                      xlink:href="./img/svg/follow_sprite.svg#follow_icon-youtube"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </section>
+                <div class="follow-contact-wrapper">
+                    <section class="follow">
+                        <h2 class="section-title subscribe__title follow_title">
+                            Follow
+                        </h2>
+                        <ul class="follow__list">
+                            <li class="follow__list-item">
+                                <a
+                                    href="https://www.instagram.com/beyond.resilience/"
+                                    rel="nofollow noopener"
+                                    target="__blank"
+                                    class="follow__list-link"
+                                >
+                                    <svg class="follow__icon">
+                                        <use
+                                            xlink:href="./img/svg/follow_sprite.svg#folow_icon-instagram"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="follow__list-item">
+                                <a
+                                    href="https://www.facebook.com/beyond.resilience.skincare/"
+                                    rel="nofollow noopener"
+                                    target="__blank"
+                                    class="follow__list-link"
+                                >
+                                    <svg class="follow__icon">
+                                        <use
+                                            xlink:href="./img/svg/follow_sprite.svg#folow_icon-facebook"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="follow__list-item">
+                                <a
+                                    href="https://www.youtube.com/channel/UCIU0MbBE03CtfYFavppWx6g/featured?view_as=subscriber"
+                                    rel="nofollow noopener"
+                                    target="__blank"
+                                    class="follow__list-link"
+                                >
+                                    <svg class="follow__icon">
+                                        <use
+                                            xlink:href="./img/svg/follow_sprite.svg#follow_icon-youtube"
+                                        ></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
 
-          <section class="contact">
-            <h2 class="section-title subscribe__title">
-              Contact us
-            </h2>
-            <div class="contact__inner-wrapper">
-              <a href="mailto:info@b-resilience.com">
-                <img
-                  src="./img/subscribe_Mail_DROP.png"
-                  alt="Mail drop"
-                  class="contact__img"
-              /></a>
-              <p class="contact__contact">
-                Phone
-                <span
-                  ><a href="tel:+431227461020" class="contact__link"
-                    >+43 1 22746 1020</a
-                  ></span
-                >
-              </p>
-              <p class="contact__contact">
-                Email
-                <span
-                  ><a href="mailto:info@b-resilience.com" class="contact__link">
-                    info@b-resilience.com</a
-                  ></span
-                >
-              </p>
+                    <section class="contact">
+                        <h2 class="section-title subscribe__title">
+                            Contact us
+                        </h2>
+                        <div class="contact__inner-wrapper">
+                            <a href="mailto:info@b-resilience.com">
+                                <img
+                                    src="./img/subscribe_Mail_DROP.png"
+                                    alt="Mail drop"
+                                    class="contact__img"
+                            /></a>
+                            <p class="contact__contact">
+                                Phone
+                                <span
+                                    ><a
+                                        href="tel:+431227461020"
+                                        class="contact__link"
+                                        >+43 1 22746 1020</a
+                                    ></span
+                                >
+                            </p>
+                            <p class="contact__contact">
+                                Email
+                                <span
+                                    ><a
+                                        href="mailto:info@b-resilience.com"
+                                        class="contact__link"
+                                    >
+                                        info@b-resilience.com</a
+                                    ></span
+                                >
+                            </p>
+                        </div>
+                    </section>
+                </div>
             </div>
-          </section>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="custom-container">
-        <div class="ftr__inner-wrapper">
-          <p class="ftr__rights">
-            &copy;2020 SANY GmbH. All rights reserved
-          </p>
-          <p class="ftr__adress">
-            Kohlmarkt 8-10 | 1010 Vienna | Austria
-          </p>
-        </div>
-      </div>
-    </footer>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="./js/index.js"></script>
-  </body>
+        </main>
+        <footer>
+            <div class="custom-container">
+                <div class="ftr__inner-wrapper">
+                    <p class="ftr__rights">
+                        &copy;2020 SANY GmbH. All rights reserved
+                    </p>
+                    <p class="ftr__adress">
+                        Kohlmarkt 8-10 | 1010 Vienna | Austria
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
 </html>
