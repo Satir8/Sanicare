@@ -905,6 +905,13 @@ section {
     text-align: center;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 767px) {
+    .bespoke__title-wrapper {
+        margin: -25px 0 50px;
+    }
+}
+
 .bespoke__description {
     width: 300px;
     margin: 0 auto;
@@ -912,7 +919,7 @@ section {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 .bespoke__title {
     width: 300px;
@@ -946,7 +953,7 @@ section {
     }
 
     .bespoke-wrapper {
-        height: 751px;
+        height: 551px;
         margin-bottom: 50px;
     }
 
@@ -956,9 +963,9 @@ section {
 
     .bespoke__content-wrapper {
         width: 862px;
-        height: 76%;
+        height: 78%;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: -40px;
     }
     .bespoke__description {
         width: 80%;
@@ -1062,13 +1069,11 @@ section {
     }
 
     .bespoke-wrapper {
-        height: 390px;
+        height: 600px;
         margin-bottom: 50px;
     }
 
     .bespoke__content-wrapper {
-        height: 100%;
-        justify-content: space-evenly;
         margin-bottom: 0;
     }
     .bespoke__description {
@@ -1088,6 +1093,22 @@ section {
 
     .bespoke__handshake {
         width: 102px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .bespoke__content-wrapper {
+        height: 80%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .bespoke-wrapper {
+        height: 700px;
+    }
+
+    .bespoke__content-wrapper {
+        height: 76%;
     }
 }
 
@@ -1146,12 +1167,11 @@ section {
 
     .bespoke-wrapper {
         margin-bottom: 80px;
-        height: 551px;
+        height: 750px;
     }
 
     .bespoke__content-wrapper {
-        justify-content: space-between;
-        padding: 28px 0px;
+        height: 80%;
     }
     .bespoke__description {
         width: 75%;
@@ -1176,6 +1196,21 @@ section {
 @media screen and (min-width: 1600px) {
     .order__btn-wrapper-md {
         max-width: 655px;
+    }
+
+    .bespoke-wrapper {
+        height: 800px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .bespoke-wrapper {
+        height: 950px;
+    }
+
+    .bespoke__content-wrapper {
+        height: 65%;
+        margin-bottom: -50px;
     }
 }
 
@@ -1592,6 +1627,12 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
     z-index: 12;
 }
 
+@media (min-width: 375px) and (max-width: 767px) {
+    .contact__banner-content {
+        margin-top: -15px;
+    }
+}
+
 .contact__title {
     color: #ffffff;
     font-family: "Adam", "Open Sans", sans-serif;
@@ -1611,6 +1652,23 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
     }
 }
 
+.contact__img-wrapper {
+    position: relative;
+}
+
+.contact__img-wrapper::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -35%);
+    background: url("../img/bespoke/bespoke_logo.png") no-repeat center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
 .contact__icon {
     max-width: 123px;
     max-height: 127px;
@@ -1623,6 +1681,20 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
 
     .contact {
         position: relative;
+    }
+
+    .contact__img-wrapper {
+        max-width: 180px;
+    }
+
+    .contact__img-wrapper::before {
+        width: 75px;
+        height: 75px;
+    }
+
+    .contact__icon {
+        max-width: 100%;
+        max-height: 100%;
     }
 
     .contact__img {
@@ -1708,6 +1780,7 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
     .contact__banner-content {
         top: 33.3%;
     }
+
     .subscribe-contact-wrapper {
         max-width: 980px;
     }
@@ -1753,6 +1826,23 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
     .contact__title {
         font-size: 34px;
         margin-bottom: 20px;
+    }
+
+    .contact__img-wrapper {
+        max-width: 220px;
+        width: 220px;
+    }
+
+    .contact__img-wrapper::before {
+        width: 85px;
+        height: 85px;
+    }
+
+    .contact__icon {
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: auto;
     }
 }
 
