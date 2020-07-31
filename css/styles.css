@@ -1271,6 +1271,10 @@ section {
     font-weight: 700;
 }
 
+.drop-text-margin-bottom {
+    margin-bottom: 10px;
+}
+
 .drop-text-italic {
     font-style: italic;
 }
