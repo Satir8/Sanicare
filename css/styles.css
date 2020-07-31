@@ -1937,7 +1937,7 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
     .subscribe__description-top {
         max-width: 380px;
         padding: 0;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .subscribe__description-bottom {
@@ -1989,7 +1989,7 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
         -ms-flex-pack: justify;
         justify-content: space-between;
         max-width: 1000px;
-        margin: 0 auto 80px;
+        margin: 0 auto 100px;
     }
 
     .contact__img-wrapper {
