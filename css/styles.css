@@ -1860,7 +1860,32 @@ input[type="text"]:not(.browser-default):focus:not([readonly]) {
 
 @media (min-width: 768px) {
     .contact__banner-content {
-        top: 30%;
+        top: 50%;
+    }
+    .contact__title {
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contact__banner-content {
+        top: 55%;
+    }
+    .contact__title {
+        margin-bottom: 90px;
+    }
+}
+@media (min-width: 1440px) {
+    .contact__title {
+        margin-bottom: 120px;
+    }
+}
+@media (min-width: 1920px) {
+    .contact__banner-content {
+        top: 54%;
+    }
+    .contact__title {
+        margin-bottom: 150px;
     }
 }
 
